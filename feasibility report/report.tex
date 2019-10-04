@@ -137,7 +137,7 @@ The possible application of work for our project are as follows:
 
 \section{Existing System}
 \subsection{Comparison of Existing Systems}
-In recent years, indoor localization systems have been great significant research activity and of growing interest for their great expected social impact. In spite of the numerous research advances, no canned solutions have yet been defined. The diversity and heterogeneity of applications, scenarios, sensor and user requirements, make it difficult to create uniform solutions. There are multiple solutions present in research area for indoor localization. Here are the comparisons of few of them:
+The smart campus guided tour based on indoor localization is not implemented yet, also there are little or even no research specifically focus on the smart campus guided tour based on indoor localization. There exist a research that presents a mobile campus tour application based on augmented reality at various universities and the features of application are the information about points of interest, location search and navigation, but it provides outdoor locations of large university campus using GPS, because it is not based on room level prediction and the information about indoor locations. But there are a lot of researches that provides different methodologies for room level prediction. In recent years, indoor localization systems have been great significant research activity and of growing interest for their great expected social impact. In spite of the numerous research advances, no canned solutions have yet been defined. The diversity and heterogeneity of applications, scenarios, sensor and user requirements, make it difficult to create uniform solutions. There are multiple solutions present in research area for room level prediction. Here are the comparisons of few of them:
 
 
 \begin{center}
@@ -151,7 +151,7 @@ In recent years, indoor localization systems have been great significant researc
 
 
 \subsection{Drawbacks of Existing Systems}
-There are many drawbacks in existing systems. In some systems, camera is required for indoor positioning which is obtrusive for some users. High cost and effort is required for the deployment of indoor localization infrastructure. Most of the existing systems have medium or low accuracy. In image based indoor localization, time consuming effort is required for built data sets. Wi-Fi fingerprinting is relatively better than other systems because of finding position by using already deployed infrastructure. But its main drawback is that it consumes more power. There are some spots where Wi-Fi access points would be difficult to power. There are some areas where Wi-Fi signals are not accessible. In our proposed system, we will find indoor location using BLE beacons. BLE beacons are small in size, light weight and cheaper then Wi-Fi. BLE consumes less power than Wi-Fi. BLE beacons are usually battery powered, which are more flexible and easier deployed than sensors used by existing systems. BLE RSS signals can have a higher sample rate than Wi-Fi RSS signals (0.25 Hz~2 Hz). Our proposed system will provide more accuracy than existing systems and also it is unobtrusive. So, our proposed system will overcome the shortcomings in existing systems. Furthermore, our system will not only predict location but also provide information of that location and nearby location in text, videos, audio and images form which is missing in existing systems because they find indoor positioning for different purposes.\cite{research4}\\
+There are many drawbacks in existing systems. In some systems, camera is required for indoor positioning which is obtrusive for some users. High cost and effort is required for the deployment of indoor localization infrastructure. Most of the existing systems have medium or low accuracy. In image based indoor localization, time consuming effort is required for built data sets. Wi-Fi fingerprinting is relatively better than other systems because of finding position by using already deployed infrastructure. But its main drawback is that it consumes more power. There are some spots where Wi-Fi access points would be difficult to power. There are some areas where Wi-Fi signals are not accessible. In our proposed system, we will find indoor location using BLE beacons. BLE beacons are small in size, light weight and cheaper then Wi-Fi. BLE consumes less power than Wi-Fi. BLE beacons are usually battery powered, which are more flexible and easier deployed than sensors used by existing systems. BLE RSS signals can have a higher sample rate than Wi-Fi RSS signals (0.25 Hz~2 Hz). Our proposed system will provide more accuracy than existing systems and also it is unobtrusive. So, our proposed system will overcome the shortcomings in existing systems. Furthermore, our system will not only predict location but also provide information of that location and nearby location in form of text, videos, audio and images which is missing in existing systems because they find indoor positioning for different purposes.\cite{research4}\\
 
 \section{Problem Statement}
 Whenever a visitor goes to university campus or visits a new place, he does not know about the specifications of that area i.e. what happens in that specific room or what courses have been taught in a particular and its nearby labs. So, we are developing a system which assists them in determining the textual and pictorial information of a particular area and its nearby locations. For this purpose, we first find the indoor location of a user by using BLE beacons and RSSI values, and then provide information to him automatically on his android application. 
@@ -171,10 +171,10 @@ An android application for common users will be developed that capture RSSI sign
 Application will fetch information data of current room and nearby rooms from server and then display these information to screen.
 \\
 \\
-Here is the similar kind of workflow of our project that gives basic idea about it:
+Here is the work flow of our project that gives basic idea about it:
 \begin{center}
-\includegraphics[scale=0.8]{diagram}
-\\Figure 2: Workflow of project 
+\includegraphics[scale=0.7]{diagram}
+\\Figure 2: Work flow of project 
 \end{center}
 
 \section{Feasibility Study}

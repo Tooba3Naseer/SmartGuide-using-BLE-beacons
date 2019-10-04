@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.8.16)  28 SEP 2019 21:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.8.16)  4 OCT 2019 19:52
 entering extended mode
 **./report.tex
 (report.tex
@@ -406,11 +406,11 @@ by pro-vid-ing much in-for-ma-tion to their cus-tomers in-for-ma-tion
  []
 
 [2] [3]
-<abc.png, id=26, 559.33969pt x 247.67531pt>
+<abc.png, id=26, 567.62062pt x 256.70906pt>
 File: abc.png Graphic file (type png)
 <use abc.png>
 Package pdftex.def Info: abc.png  used on input line 144.
-(pdftex.def)             Requested size: 447.47235pt x 198.1405pt.
+(pdftex.def)             Requested size: 454.09709pt x 205.36751pt.
  [4]
 Underfull \hbox (badness 10000) in paragraph at lines 154--155
 
@@ -428,22 +428,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 171--175
  []
 
 [6]
-<diagram.png, id=39, 528.47438pt x 282.30469pt>
+<diagram.png, id=39, 681.29532pt x 366.61969pt>
 File: diagram.png Graphic file (type png)
 <use diagram.png>
 Package pdftex.def Info: diagram.png  used on input line 176.
-(pdftex.def)             Requested size: 422.78008pt x 225.84404pt.
+(pdftex.def)             Requested size: 476.90347pt x 256.63202pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--189
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 186--189
-
+Overfull \hbox (7.14845pt too wide) in paragraph at lines 176--177
+ [] 
  []
 
 [7 <./diagram.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 186--189
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--189
+
+ []
+
 <graph1.jpg, id=44, 702.625pt x 381.425pt>
 File: graph1.jpg Graphic file (type jpg)
 <use graph1.jpg>
@@ -560,19 +564,19 @@ le at: https://medium.
 [15] (report.aux) ) 
 Here is how much of TeX's memory you used:
  4630 strings out of 492895
- 65230 string characters out of 3123266
+ 65305 string characters out of 3123266
  137884 words of memory out of 3000000
  8451 multiletter control sequences out of 15000+200000
  17669 words of font info for 38 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,11n,43p,1562b,283s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,11n,43p,1565b,283s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/HP 820/AppData/Local/Programs/MiKTeX 2.9/fonts/enc
 /dvips/base/8r.enc}<C:/Users/HP 820/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmsy10.pfb><C:/Users/HP 820/AppData/Local/Programs/MiKTeX
  2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/HP 820/AppData/Local/Programs/M
 iKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/HP 820/AppData/Local/Progr
 ams/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on report.pdf (18 pages, 382707 bytes).
+Output written on report.pdf (18 pages, 307132 bytes).
 PDF statistics:
  97 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
