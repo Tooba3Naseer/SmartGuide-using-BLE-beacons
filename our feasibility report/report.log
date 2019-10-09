@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.8.16)  4 OCT 2019 19:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.8.16)  9 OCT 2019 18:14
 entering extended mode
 **./report.tex
 (report.tex
@@ -364,7 +364,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
  [1
 
 {C:/Users/HP 820/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./logo.png
@@ -385,124 +385,125 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout3 = `report.toc'.
 
  [2]
-Underfull \hbox (badness 10000) in paragraph at lines 71--74
+Underfull \hbox (badness 10000) in paragraph at lines 72--75
 
+ []
+
+
+Overfull \hbox (5.23021pt too wide) in paragraph at lines 79--80
+\OT1/ptm/m/n/10 Outdoor lo-cal-iza-tion has been for-mal-ized by us-ing satelli
+te-based tech-nolo-gies i.e. GPS, Com-pass, Bei-Dou, GLONASS,
  []
 
 [1
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 86.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 87.
 
 ("C:\Users\HP 820\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 86.
-
-Overfull \hbox (11.95pt too wide) in paragraph at lines 88--89
-[]\OT1/ptm/m/n/10 Industrial ad-min-is-tra-tors seek ad-van-tage of their time 
-by pro-vid-ing much in-for-ma-tion to their cus-tomers in-for-ma-tion
- []
-
-[2] [3]
-<abc.png, id=26, 567.62062pt x 256.70906pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 87.
+ [2] [3]
+<abc.png, id=26, 562.35094pt x 249.18094pt>
 File: abc.png Graphic file (type png)
 <use abc.png>
-Package pdftex.def Info: abc.png  used on input line 144.
-(pdftex.def)             Requested size: 454.09709pt x 205.36751pt.
+Package pdftex.def Info: abc.png  used on input line 151.
+(pdftex.def)             Requested size: 449.88136pt x 199.345pt.
  [4]
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
  []
 
 [5 <./abc.png>]
-Overfull \hbox (5.64047pt too wide) in paragraph at lines 171--175
+Overfull \hbox (5.64047pt too wide) in paragraph at lines 178--182
 \OT1/ptm/m/n/10 Application will fetch in-for-ma-tion data of cur-rent room and
  nearby rooms from server and then dis-play these in-for-ma-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--175
+Underfull \hbox (badness 10000) in paragraph at lines 178--182
 
  []
 
 [6]
-<diagram.png, id=39, 681.29532pt x 366.61969pt>
+<diagram.png, id=39, 731.73375pt x 359.09157pt>
 File: diagram.png Graphic file (type png)
 <use diagram.png>
-Package pdftex.def Info: diagram.png  used on input line 176.
-(pdftex.def)             Requested size: 476.90347pt x 256.63202pt.
+Package pdftex.def Info: diagram.png  used on input line 183.
+(pdftex.def)             Requested size: 512.21013pt x 251.36238pt.
 
-Overfull \hbox (7.14845pt too wide) in paragraph at lines 176--177
+Overfull \hbox (42.45511pt too wide) in paragraph at lines 183--184
  [] 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--196
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--196
+
+ []
+
 [7 <./diagram.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 186--189
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 186--189
-
- []
-
 <graph1.jpg, id=44, 702.625pt x 381.425pt>
 File: graph1.jpg Graphic file (type jpg)
 <use graph1.jpg>
-Package pdftex.def Info: graph1.jpg  used on input line 191.
+Package pdftex.def Info: graph1.jpg  used on input line 198.
 (pdftex.def)             Requested size: 491.83414pt x 266.99567pt.
 
-Overfull \hbox (22.07912pt too wide) in paragraph at lines 191--192
+Overfull \hbox (22.07912pt too wide) in paragraph at lines 198--199
  [] 
  []
 
 <graph3.jpg, id=45, 661.47125pt x 355.3275pt>
 File: graph3.jpg Graphic file (type jpg)
 <use graph3.jpg>
-Package pdftex.def Info: graph3.jpg  used on input line 197.
+Package pdftex.def Info: graph3.jpg  used on input line 204.
 (pdftex.def)             Requested size: 463.02672pt x 248.72754pt.
 [8 <./graph1.jpg>]
 <graph4.jpg, id=49, 699.61375pt x 330.23375pt>
 File: graph4.jpg Graphic file (type jpg)
 <use graph4.jpg>
-Package pdftex.def Info: graph4.jpg  used on input line 202.
+Package pdftex.def Info: graph4.jpg  used on input line 209.
 (pdftex.def)             Requested size: 489.72629pt x 231.16203pt.
 
-Overfull \hbox (19.97127pt too wide) in paragraph at lines 202--203
+Overfull \hbox (19.97127pt too wide) in paragraph at lines 209--210
  [] 
  []
 
 <graph6.jpg, id=50, 633.36626pt x 295.1025pt>
 File: graph6.jpg Graphic file (type jpg)
 <use graph6.jpg>
-Package pdftex.def Info: graph6.jpg  used on input line 207.
+Package pdftex.def Info: graph6.jpg  used on input line 214.
 (pdftex.def)             Requested size: 443.35336pt x 206.57033pt.
 [9 <./graph3.jpg> <./graph4.jpg>]
 <table3.png, id=54, 459.21562pt x 82.80937pt>
 File: table3.png Graphic file (type png)
 <use table3.png>
-Package pdftex.def Info: table3.png  used on input line 220.
+Package pdftex.def Info: table3.png  used on input line 227.
 (pdftex.def)             Requested size: 367.37299pt x 66.24757pt.
  [10 <./graph6.jpg> <./table3.png>]
 <table2.png, id=60, 457.71pt x 83.5622pt>
 File: table2.png Graphic file (type png)
 <use table2.png>
-Package pdftex.def Info: table2.png  used on input line 229.
+Package pdftex.def Info: table2.png  used on input line 236.
 (pdftex.def)             Requested size: 366.1685pt x 66.84984pt.
 <table1.png, id=61, 464.4853pt x 74.52844pt>
 File: table1.png Graphic file (type png)
 <use table1.png>
-Package pdftex.def Info: table1.png  used on input line 238.
+Package pdftex.def Info: table1.png  used on input line 245.
 (pdftex.def)             Requested size: 371.58875pt x 59.62282pt.
 <timeline.jpeg, id=62, 1067.99pt x 481.8pt>
 File: timeline.jpeg Graphic file (type jpg)
 <use timeline.jpeg>
-Package pdftex.def Info: timeline.jpeg  used on input line 245.
+Package pdftex.def Info: timeline.jpeg  used on input line 252.
 (pdftex.def)             Requested size: 533.9937pt x 240.8994pt.
 
-Overfull \hbox (64.23868pt too wide) in paragraph at lines 245--246
+Overfull \hbox (64.23868pt too wide) in paragraph at lines 252--253
  [] 
  []
 
@@ -510,73 +511,43 @@ Overfull \hbox (64.23868pt too wide) in paragraph at lines 245--246
 <table5.png, id=68, 511.15968pt x 190.46156pt>
 File: table5.png Graphic file (type png)
 <use table5.png>
-Package pdftex.def Info: table5.png  used on input line 250.
+Package pdftex.def Info: table5.png  used on input line 257.
 (pdftex.def)             Requested size: 408.92828pt x 152.36943pt.
  [12 <./timeline.jpeg> <./table5.png>]
 [13] [14]
-Underfull \hbox (badness 1668) in paragraph at lines 314--326
-\OT1/ptm/m/n/10 vol-ume=6, num-ber=, pages=38251-38272, key-words=decision tree
-s;Gaussian pro-cesses;learning (ar-ti-fi-cial
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 314--326
-\OT1/ptm/m/n/10 com-put-ing;wireless LAN;room-level;latitude-longitude pre-dic-
-tion;hybrid so-lu-tion;indoor lo-cal-iza-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 314--326
-\OT1/ptm/m/n/10 sys-tem;Gaussian Mix-ture Model-based soft clustering;RDF;GMM-b
-ased soft clus-ter-ing;natural data
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 314--326
-\OT1/ptm/m/n/10 sub-sets;decision trees;hybrid lo-ca-tion;room es-ti-ma-tion;Hy
-bLoc per-for-mance;missing data re-place-ment
- []
-
-
-Underfull \hbox (badness 4193) in paragraph at lines 314--326
-\OT1/ptm/m/n/10 value;Hybrid In-door Wi-Fi Lo-cal-iza-tion;soft clustering-base
-d Ran-dom De-ci-sion For-est en-sem-bles;data
- []
-
-
-Underfull \hbox (badness 1024) in paragraph at lines 314--326
-\OT1/ptm/m/n/10 dynamics;Wi-Fi fin-ger-prints;Wireless fi-delity;Forestry;Finge
-rprint recog-ni-tion;IP net-works;Meters;Floors;Big
- []
-
-
-Overfull \hbox (4.56921pt too wide) in paragraph at lines 339--340
+Overfull \hbox (4.56921pt too wide) in paragraph at lines 326--327
 []\OT1/ptm/m/n/10 Indoor po-si-tion-ing sys-tem. [on-line] Avail-able at: https
 ://locatify.com/blog/indoor-positioning-systems-ble-beacons/ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--352
+Overfull \hbox (12.51929pt too wide) in paragraph at lines 337--340
 []\OT1/ptm/m/n/10 Indoor lo-cal-iza-tion us-ing mo-bile app. [on-line] Avail-ab
-le at: https://medium.
+le at: https://medium.com/cuelogic-technologies/beacons-with-
+ []
+
+
+Underfull \hbox (badness 1810) in paragraph at lines 347--349
+[]\OT1/ptm/m/n/10 YujieWeia and Burcu Akincia.End-to-end Image-based In-door Lo
+-cal-iza-tion for Fa-cil-ity Op-er-a-tion and
  []
 
 [15] (report.aux) ) 
 Here is how much of TeX's memory you used:
- 4630 strings out of 492895
- 65305 string characters out of 3123266
- 137884 words of memory out of 3000000
- 8451 multiletter control sequences out of 15000+200000
+ 4638 strings out of 492895
+ 65371 string characters out of 3123266
+ 137891 words of memory out of 3000000
+ 8459 multiletter control sequences out of 15000+200000
  17669 words of font info for 38 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,11n,43p,1565b,283s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,11n,43p,1565b,284s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/HP 820/AppData/Local/Programs/MiKTeX 2.9/fonts/enc
 /dvips/base/8r.enc}<C:/Users/HP 820/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmsy10.pfb><C:/Users/HP 820/AppData/Local/Programs/MiKTeX
  2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/HP 820/AppData/Local/Programs/M
 iKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/HP 820/AppData/Local/Progr
 ams/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on report.pdf (18 pages, 307132 bytes).
+Output written on report.pdf (18 pages, 308468 bytes).
 PDF statistics:
  97 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
