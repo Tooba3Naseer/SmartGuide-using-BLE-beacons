@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage{times}
+\usepackage{cite}
 \usepackage[margin = 1in]{geometry}
 \usepackage{amsfonts, amsmath, amssymb}
 \usepackage[none]{hyphenat}
@@ -76,7 +77,8 @@ This project will guide persons who are not much familiar with visiting place. I
 
 
 \subsection{Background}
-Outdoor localization has been formalized by using satellite-based technologies i.e. GPS, Compass, BeiDou, GLONASS, COMPASS, and GALILEO. It is hard for finding the indoor location by using conventional GPS technology\cite{research1} because of no direct (Line of Sight)\cite{research2} in indoors, so we cannot use these technologies for indoor positioning. Up to date, the technologies used for indoor localization approach are: TOA (Time of Arrival), TDOA (Time Difference of Arrival), AOA (angle of arrival) but they have some limitations. TOA and TDOA require precise clock count and its synchronization and AOA-based systems require special antennas for their propagation. So, we are going to implement a system which employs suitable machine learning approach to find the location by using RSSI (Received Signal Strength Indicator) fingerprinting technique. This RSSI values will pass to the trained model (a model which is trained on a given set of input and output values by using appropriate machine learning algorithm) which gives the location of the mobile device.
+Outdoor localization has been formalized by using satellite-based technologies i.e. GPS\cite{GPS},
+ Compass, BeiDou, GLONASS\cite{Loco}, COMPASS, and GALILEO\cite{GALILEO}. It is hard for finding the indoor location by using conventional GPS technology\cite{research1} because of no direct (Line of Sight)\cite{research2} in indoors, so we cannot use these technologies for indoor positioning. Up to date, the technologies used for indoor localization approach are: TOA (Time of Arrival), TDOA (Time Difference of Arrival), AOA (angle of arrival) but they have some limitations. TOA and TDOA require precise clock count and its synchronization and AOA-based systems require special antennas for their propagation. So, we are going to implement a system which employs suitable machine learning approach to find the location by using RSSI (Received Signal Strength Indicator) fingerprinting technique. This RSSI values will pass to the trained model (a model which is trained on a given set of input and output values by using appropriate machine learning algorithm) which gives the location of the mobile device.
 \subsection{Motivation}
 People/visitors who go to an unknown place find it difficult to traverse and wants to find places/people of interest easily. Such problems motivate us to provide ease and leverage facility to users so that they can see the information of a particular indoor environment on his mobile application automatically. BLE is available on nearly every smart device so no additional hardware required at user end. Hence by utilizing their indoor location determined using machine learning on BLE fingerprints, guided tours of smart campus to visitors can be provided and facilitating them. We are using latest technology of BLE beacons because they work on battery and consume less energy than Wi-Fi signals.\cite{research3}
 \section{Goal of the project}
@@ -302,12 +304,25 @@ Here are some Opportunities of our project:
 \end{itemize}
 \pagebreak
 
-\section{References}
-\begin{thebibliography}{9}
 
+
+\section{References}
+\cite{akram2018censloc}.
+\cite{cooper2016loco}.
+\cite{hultgren2015evaluating}.
+\cite{zhuang2016smartphone}.
+\cite{Introduction}.
+
+\cite{Localization}.
+
+\cite{belmonte2017indoor}.
+\cite{wei2018end}.
+
+\bibliographystyle{plain}
+\bibliography{References}
+\begin{thebibliography}{9}
 \bibitem{research1} 
-Akram B.A., Akbar A.H., Wajid B., Shafiq O., Zafar A. (2019) LocSwayamwar: Finding a Suitable ML Algorithm for
- Wi-Fi Fingerprinting Based Indoor Positioning System. In: Boyaci A., Ekti A., Aydin M., Yarkan S. (eds) 
+Akram B.A., Akbar A.H., Wajid B., Shafiq O., Zafar A. (2019) LocSwayamwar: Finding a Suitable ML Algorithm for Wi-Fi Fingerprinting Based Indoor Positioning System. In: Boyaci A., Ekti A., Aydin M., Yarkan S. (eds) 
 International Telecommunications Conference. Lecture Notes in Electrical Engineering, vol 504. Springer, Singapore
 
 \bibitem{research2} 

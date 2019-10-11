@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.15)  10 OCT 2019 23:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.15)  10 OCT 2019 21:35
 entering extended mode
-**./report.tex
-(report.tex
+**./fsre.tex
+(fsre.tex
 LaTeX2e <2018-12-01>
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\article.cls"
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
@@ -22,11 +22,6 @@ File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\times.sty"
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
-)
-("C:\Program Files\MiKTeX 2.9\tex/latex/cite\cite.sty"
-LaTeX Info: Redefining \cite on input line 302.
-LaTeX Info: Redefining \nocite on input line 332.
-Package: cite 2015/02/27  v 5.5
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.sty"
 Package: geometry 2018/04/16 v5.8 Page Geometry
@@ -208,27 +203,24 @@ Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@posthook=\toks24
 )
 \c@theorem=\count111
- (report.aux
+ (fsre.aux)
+\openout1 = `fsre.aux'.
 
-LaTeX Warning: Label `Introduction' multiply defined.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 29.
 
-)
-\openout1 = `report.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 30.
- ("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ot1ptm.fd"
+("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 *geometry* driver: auto-detecting
@@ -325,19 +317,19 @@ G,.JBIG2,.JB2,.eps]
 <logo.png, id=1, 224.84pt x 225.84375pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 36.
+Package pdftex.def Info: logo.png  used on input line 35.
 (pdftex.def)             Requested size: 112.41972pt x 112.92159pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 37.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 52.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
  [1
 
 {C:/Users/MLogix/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./logo.png
 >]
-(report.toc
+(fsre.toc
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
 LaTeX Font Info:    Try loading font information for U+msa on input line 2.
@@ -350,15 +342,15 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 2.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1])
 \tf@toc=\write3
-\openout3 = `report.toc'.
+\openout3 = `fsre.toc'.
 
  [2]
-Underfull \hbox (badness 10000) in paragraph at lines 73--76
+Underfull \hbox (badness 10000) in paragraph at lines 72--75
 
  []
 
 
-Overfull \hbox (5.23021pt too wide) in paragraph at lines 80--81
+Overfull \hbox (5.23021pt too wide) in paragraph at lines 79--80
 \OT1/ptm/m/n/10 Outdoor lo-cal-iza-tion has been for-mal-ized by us-ing satelli
 te-based tech-nolo-gies i.e. GPS, Com-pass, Bei-Dou, GLONASS,
  []
@@ -366,31 +358,31 @@ te-based tech-nolo-gies i.e. GPS, Com-pass, Bei-Dou, GLONASS,
 [1
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 88.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 87.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 88.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 87.
  [2] [3]
 <abc.png, id=26, 562.35094pt x 249.18094pt>
 File: abc.png Graphic file (type png)
 <use abc.png>
-Package pdftex.def Info: abc.png  used on input line 152.
+Package pdftex.def Info: abc.png  used on input line 151.
 (pdftex.def)             Requested size: 449.88136pt x 199.345pt.
  [4]
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
  []
 
 [5 <./abc.png>]
-Overfull \hbox (5.64047pt too wide) in paragraph at lines 179--183
+Overfull \hbox (5.64047pt too wide) in paragraph at lines 178--182
 \OT1/ptm/m/n/10 Application will fetch in-for-ma-tion data of cur-rent room and
  nearby rooms from server and then dis-play these in-for-ma-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--183
+Underfull \hbox (badness 10000) in paragraph at lines 178--182
 
  []
 
@@ -398,20 +390,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 179--183
 <diagram.png, id=39, 731.73375pt x 359.09157pt>
 File: diagram.png Graphic file (type png)
 <use diagram.png>
-Package pdftex.def Info: diagram.png  used on input line 184.
+Package pdftex.def Info: diagram.png  used on input line 183.
 (pdftex.def)             Requested size: 512.21013pt x 251.36238pt.
 
-Overfull \hbox (42.45511pt too wide) in paragraph at lines 184--185
+Overfull \hbox (42.45511pt too wide) in paragraph at lines 183--184
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--197
+Underfull \hbox (badness 10000) in paragraph at lines 193--196
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--197
+Underfull \hbox (badness 10000) in paragraph at lines 193--196
 
  []
 
@@ -419,58 +411,58 @@ Underfull \hbox (badness 10000) in paragraph at lines 194--197
 <graph1.jpg, id=44, 702.625pt x 381.425pt>
 File: graph1.jpg Graphic file (type jpg)
 <use graph1.jpg>
-Package pdftex.def Info: graph1.jpg  used on input line 199.
+Package pdftex.def Info: graph1.jpg  used on input line 198.
 (pdftex.def)             Requested size: 491.83414pt x 266.99567pt.
 
-Overfull \hbox (22.07912pt too wide) in paragraph at lines 199--200
+Overfull \hbox (22.07912pt too wide) in paragraph at lines 198--199
  [] 
  []
 
 <graph3.jpg, id=45, 661.47125pt x 355.3275pt>
 File: graph3.jpg Graphic file (type jpg)
 <use graph3.jpg>
-Package pdftex.def Info: graph3.jpg  used on input line 205.
+Package pdftex.def Info: graph3.jpg  used on input line 204.
 (pdftex.def)             Requested size: 463.02672pt x 248.72754pt.
 [8 <./graph1.jpg>]
 <graph4.jpg, id=49, 699.61375pt x 330.23375pt>
 File: graph4.jpg Graphic file (type jpg)
 <use graph4.jpg>
-Package pdftex.def Info: graph4.jpg  used on input line 210.
+Package pdftex.def Info: graph4.jpg  used on input line 209.
 (pdftex.def)             Requested size: 489.72629pt x 231.16203pt.
 
-Overfull \hbox (19.97127pt too wide) in paragraph at lines 210--211
+Overfull \hbox (19.97127pt too wide) in paragraph at lines 209--210
  [] 
  []
 
 <graph6.jpg, id=50, 633.36626pt x 295.1025pt>
 File: graph6.jpg Graphic file (type jpg)
 <use graph6.jpg>
-Package pdftex.def Info: graph6.jpg  used on input line 215.
+Package pdftex.def Info: graph6.jpg  used on input line 214.
 (pdftex.def)             Requested size: 443.35336pt x 206.57033pt.
 [9 <./graph3.jpg> <./graph4.jpg>]
 <table3.png, id=54, 459.21562pt x 82.80937pt>
 File: table3.png Graphic file (type png)
 <use table3.png>
-Package pdftex.def Info: table3.png  used on input line 228.
+Package pdftex.def Info: table3.png  used on input line 227.
 (pdftex.def)             Requested size: 367.37299pt x 66.24757pt.
  [10 <./graph6.jpg> <./table3.png>]
 <table2.png, id=60, 457.71pt x 83.5622pt>
 File: table2.png Graphic file (type png)
 <use table2.png>
-Package pdftex.def Info: table2.png  used on input line 237.
+Package pdftex.def Info: table2.png  used on input line 236.
 (pdftex.def)             Requested size: 366.1685pt x 66.84984pt.
 <table1.png, id=61, 464.4853pt x 74.52844pt>
 File: table1.png Graphic file (type png)
 <use table1.png>
-Package pdftex.def Info: table1.png  used on input line 246.
+Package pdftex.def Info: table1.png  used on input line 245.
 (pdftex.def)             Requested size: 371.58875pt x 59.62282pt.
 <timeline.jpeg, id=62, 1067.99pt x 481.8pt>
 File: timeline.jpeg Graphic file (type jpg)
 <use timeline.jpeg>
-Package pdftex.def Info: timeline.jpeg  used on input line 253.
+Package pdftex.def Info: timeline.jpeg  used on input line 252.
 (pdftex.def)             Requested size: 533.9937pt x 240.8994pt.
 
-Overfull \hbox (64.23868pt too wide) in paragraph at lines 253--254
+Overfull \hbox (64.23868pt too wide) in paragraph at lines 252--253
  [] 
  []
 
@@ -478,71 +470,57 @@ Overfull \hbox (64.23868pt too wide) in paragraph at lines 253--254
 <table5.png, id=68, 511.15968pt x 190.46156pt>
 File: table5.png Graphic file (type png)
 <use table5.png>
-Package pdftex.def Info: table5.png  used on input line 258.
+Package pdftex.def Info: table5.png  used on input line 257.
 (pdftex.def)             Requested size: 408.92828pt x 152.36943pt.
  [12 <./timeline.jpeg> <./table5.png>]
-[13] [14] (report.bbl
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 7.
- ("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ot1pcr.fd"
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-Underfull \hbox (badness 2005) in paragraph at lines 4--8
-[]\OT1/ptm/m/n/10 Galileo eu-ro-pean global nav-i-ga-tion satel-lite sys-tem  [
-On-line] Avail-able at:.  $\OT1/pcr/m/n/10 https : / / www . gsa .
- []
+[13] [14]
+
+LaTeX Warning: Citation `inproceedings' on page 15 undefined on input line 307.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--8
-\OT1/pcr/m/n/10 europa . eu / european -[] gnss / galileo / galileo -[] europea
-n -[] global -[] satellite -[] based -[]
- []
 
+LaTeX Warning: Citation `.' on page 15 undefined on input line 308.
 
-Underfull \hbox (badness 1412) in paragraph at lines 16--19
-[]\OT1/ptm/m/n/10 Indoor lo-cal-iza-tion us-ing mo-bile app [On-line] Avail-abl
-e at:.  $\OT1/pcr/m/n/10 https : / / medium . com / cuelogic -[]
- []
+No file fsre.bbl.
 
-) [15]
-Overfull \hbox (4.56921pt too wide) in paragraph at lines 341--342
+Overfull \hbox (4.56921pt too wide) in paragraph at lines 332--333
 []\OT1/ptm/m/n/10 Indoor po-si-tion-ing sys-tem. [on-line] Avail-able at: https
 ://locatify.com/blog/indoor-positioning-systems-ble-beacons/ 
  []
 
 
-Overfull \hbox (12.51929pt too wide) in paragraph at lines 352--355
+Overfull \hbox (12.51929pt too wide) in paragraph at lines 342--345
 []\OT1/ptm/m/n/10 Indoor lo-cal-iza-tion us-ing mo-bile app. [on-line] Avail-ab
 le at: https://medium.com/cuelogic-technologies/beacons-with-
  []
 
 
-Underfull \hbox (badness 1810) in paragraph at lines 362--364
+Underfull \hbox (badness 1810) in paragraph at lines 352--354
 []\OT1/ptm/m/n/10 YujieWeia and Burcu Akincia.End-to-end Image-based In-door Lo
 -cal-iza-tion for Fa-cil-ity Op-er-a-tion and
  []
 
-[16] (report.aux)
+[15] (fsre.aux)
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4777 strings out of 492895
- 65214 string characters out of 3133476
- 139784 words of memory out of 3000000
- 8585 multiletter control sequences out of 15000+200000
- 19868 words of font info for 42 fonts, out of 3000000 for 9000
+ 4640 strings out of 492895
+ 63292 string characters out of 3133476
+ 137896 words of memory out of 3000000
+ 8460 multiletter control sequences out of 15000+200000
+ 17669 words of font info for 38 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,11n,43p,1565b,332s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,11n,43p,1563b,284s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/ur
-w/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report.pdf (19 pages, 336676 bytes).
+/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/
+times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
+
+Output written on fsre.pdf (18 pages, 308885 bytes).
 PDF statistics:
- 109 PDF objects out of 1000 (max. 8388607)
+ 97 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
