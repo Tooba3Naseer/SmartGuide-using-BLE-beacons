@@ -77,10 +77,9 @@ This project will guide persons who are not much familiar with visiting place. I
 
 
 \subsection{Background}
-Outdoor localization has been formalized by using satellite-based technologies i.e. GPS\cite{GPS},
- Compass, BeiDou, GLONASS\cite{Loco}, COMPASS, and GALILEO\cite{GALILEO}. It is hard for finding the indoor location by using conventional GPS technology\cite{research1} because of no direct (Line of Sight)\cite{research2} in indoors, so we cannot use these technologies for indoor positioning. Up to date, the technologies used for indoor localization approach are: TOA (Time of Arrival), TDOA (Time Difference of Arrival), AOA (angle of arrival) but they have some limitations. TOA and TDOA require precise clock count and its synchronization and AOA-based systems require special antennas for their propagation. So, we are going to implement a system which employs suitable machine learning approach to find the location by using RSSI (Received Signal Strength Indicator) fingerprinting technique. This RSSI values will pass to the trained model (a model which is trained on a given set of input and output values by using appropriate machine learning algorithm) which gives the location of the mobile device.
+Outdoor localization has been formalized by using satellite-based technologies i.e. GPS\cite{GPS}, BeiDou\cite{cooper2016loco}, GLONASS\cite{cooper2016loco}, and GALILEO\cite{GALILEO}. It is hard for finding the indoor location by using conventional GPS technology because of no direct (Line of Sight)\cite{akram2018censloc} in indoors, so we cannot use these technologies for indoor positioning. Up to date, the technologies used for indoor localization approach are: TOA (Time of Arrival), TDOA (Time Difference of Arrival), AOA (angle of arrival) but they have some limitations. TOA and TDOA require precise clock count and its synchronization and AOA-based systems require special antennas for their propagation. So, we are going to implement a system which employs suitable machine learning approach to find the location by using RSSI (Received Signal Strength Indicator) fingerprinting technique. This RSSI values will pass to the trained model (a model which is trained on a given set of input and output values by using appropriate machine learning algorithm) which gives the location of the mobile device.
 \subsection{Motivation}
-People/visitors who go to an unknown place find it difficult to traverse and wants to find places/people of interest easily. Such problems motivate us to provide ease and leverage facility to users so that they can see the information of a particular indoor environment on his mobile application automatically. BLE is available on nearly every smart device so no additional hardware required at user end. Hence by utilizing their indoor location determined using machine learning on BLE fingerprints, guided tours of smart campus to visitors can be provided and facilitating them. We are using latest technology of BLE beacons because they work on battery and consume less energy than Wi-Fi signals.\cite{research3}
+People/visitors who go to an unknown place find it difficult to traverse and wants to find places/people of interest easily. Such problems motivate us to provide ease and leverage facility to users so that they can see the information of a particular indoor environment on his mobile application automatically. BLE is available on nearly every smart device so no additional hardware required at user end. Hence by utilizing their indoor location determined using machine learning on BLE fingerprints, guided tours of smart campus to visitors can be provided and facilitating them. We are using latest technology of BLE beacons because they work on battery and consume less energy than Wi-Fi signals\cite{hultgren2015evaluating}.
 \section{Goal of the project}
 The main target user of our system is a visitor of a university campus. So, our goal is to provide ease and guidance to him regarding a particular lab and its nearby labs automatically via installed application on device by estimating his indoor location. The guidance involves the textual and pictorial information about that particular indoor environment.
 \section{Objectives of the project}
@@ -95,7 +94,7 @@ The main target user of our system is a visitor of a university campus. So, our 
 \end{itemize}
 \subsection{Research Objectives}
 \begin{itemize}
-\item To find the location of the user that will be connected to his android app via Bluetooth technology.\cite{Introduction}
+\item To find the location of the user that will be connected to his android app via Bluetooth technology\cite{Introduction}.
 \item To monitor and provide guidelines to user who is connected to the BLE beacon via Bluetooth and mobile application, we need to find user location inside buildings.
 \item To develop an android application which provide textual and pictorial information of particular area and its nearby areas to the user who is located in that indoor environment.
 
@@ -119,7 +118,7 @@ The main target user of our system is a visitor of a university campus. So, our 
 \end{itemize}
 
 \section{Scope of the project}
-In this project, android application runs on a user’s mobile device and and will capture BLE RSSI fingerprints. The fingerprints collected at the initial stage will be processed and used to train suitable machine learning model, after training of the ML based location prediction model, based on the room prediction relevant information of nearby rooms, facilities and personnel available will be prepared to be displayed to user at run time , the user will be guided to install our android app on their phone, their mobile device will capture BLE fingerprint and the fingerprint will be sent to back end server where our trained model will predict their current location inside building in terms of room.\cite{lLoco} The relevant information will be delivered and shown on user mobile device providing guided tour. 
+In this project, android application runs on a user’s mobile device and and will capture BLE RSSI fingerprints. The fingerprints collected at the initial stage will be processed and used to train suitable machine learning model, after training of the ML based location prediction model, based on the room prediction relevant information of nearby rooms, facilities and personnel available will be prepared to be displayed to user at run time , the user will be guided to install our android app on their phone, their mobile device will capture BLE fingerprint and the fingerprint will be sent to back end server where our trained model will predict their current location inside building in terms of room\cite{Loco}. The relevant information will be delivered and shown on user mobile device providing guided tour. 
 The placement of Bluetooth low energy beacons will be held in CSE dept at UET Lahore. 
 
 
@@ -146,7 +145,7 @@ The possible application of work for our project are as follows:
 
 \section{Existing System}
 \subsection{Comparison of Existing Systems}
-The smart campus guided tour based on indoor localization is not implemented yet, also there are little or even no research specifically focus on the smart campus guided tour based on indoor localization. There exist a research that presents a mobile campus tour application based on augmented reality at various universities and the features of application are the information about points of interest, location search and navigation, but it provides outdoor locations of large university campus using GPS, because it is not based on room level prediction and the information about indoor locations. But there are a lot of researches that provides different methodologies for room level prediction. In recent years, indoor localization systems have been great significant research activity and of growing interest for their great expected social impact. In spite of the numerous research advances, no canned solutions have yet been defined. The diversity and heterogeneity of applications, scenarios, sensor and user requirements, make it difficult to create uniform solutions. There are multiple solutions present in research area for room level prediction. Here are the comparisons of few of them:
+The smart campus guided tour based on indoor localization is not implemented yet, also there are little or even no research specifically focus on the smart campus guided tour based on indoor localization. There exist a research that presents a mobile campus tour application based on augmented reality at various universities and the features of application are the information about points of interest, location search and navigation, but it provides outdoor locations of large university campus using GPS, because it is not based on room level prediction and the information about indoor locations. But there are a lot of researches that provides different methodologies for room level prediction. In recent years, indoor localization systems have been great significant research activity and of growing interest for their great expected social impact. In spite of the numerous research advances, no canned solutions have yet been defined. The diversity and heterogeneity of applications, scenarios, sensor and user requirements, make it difficult to create uniform solutions. There are multiple solutions present in research area for room level prediction\cite{wei2018end}. Here are the comparisons of few of them:
 
 
 \begin{center}
@@ -160,7 +159,7 @@ The smart campus guided tour based on indoor localization is not implemented yet
 
 
 \subsection{Drawbacks of Existing Systems}
-There are many drawbacks in existing systems. In some systems, camera is required for indoor positioning which is obtrusive for some users. High cost and effort is required for the deployment of indoor localization infrastructure. Most of the existing systems have medium or low accuracy. In image based indoor localization, time consuming effort is required for built data sets. Wi-Fi fingerprinting is relatively better than other systems because of finding position by using already deployed infrastructure. But its main drawback is that it consumes more power. There are some spots where Wi-Fi access points would be difficult to power. There are some areas where Wi-Fi signals are not accessible. In our proposed system, we will find indoor location using BLE beacons. BLE beacons are small in size, light weight and cheaper then Wi-Fi. BLE consumes less power than Wi-Fi. BLE beacons are usually battery powered, which are more flexible and easier deployed than sensors used by existing systems. BLE RSS signals can have a higher sample rate than Wi-Fi RSS signals (0.25 Hz~2 Hz). Our proposed system will provide more accuracy than existing systems and also it is unobtrusive. So, our proposed system will overcome the shortcomings in existing systems. Furthermore, our system will not only predict location but also provide information of that location and nearby location in form of text, videos, audio and images which is missing in existing systems because they find indoor positioning for different purposes.\cite{research4}\\
+There are many drawbacks in existing systems. In some systems, camera is required for indoor positioning which is obtrusive for some users. High cost and effort is required for the deployment of indoor localization infrastructure. Most of the existing systems have medium or low accuracy. In image based indoor localization, time consuming effort is required for built data sets. Wi-Fi fingerprinting is relatively better than other systems because of finding position by using already deployed infrastructure. But its main drawback is that it consumes more power. There are some spots where Wi-Fi access points would be difficult to power. There are some areas where Wi-Fi signals are not accessible. In our proposed system, we will find indoor location using BLE beacons. BLE beacons are small in size, light weight and cheaper then Wi-Fi. BLE consumes less power than Wi-Fi. BLE beacons are usually battery powered, which are more flexible and easier deployed than sensors used by existing systems. BLE RSS signals can have a higher sample rate than Wi-Fi RSS signals (0.25 Hz~2 Hz). Our proposed system will provide more accuracy than existing systems and also it is unobtrusive. So, our proposed system will overcome the shortcomings in existing systems. Furthermore, our system will not only predict location but also provide information of that location and nearby location in form of text, videos, audio and images which is missing in existing systems because they find indoor positioning for different purposes\cite{zhuang2016smartphone}.
 
 \section{Problem Statement}
 Whenever a visitor goes to university campus or visits a new place, he does not know about the specifications of that area i.e. what happens in that specific room or what courses have been taught in a particular and its nearby labs. So, we are developing a system which assists them in determining the textual and pictorial information of a particular area and its nearby locations. For this purpose, we first find the indoor location of a user by using BLE beacons and RSSI values, and then provide information to him automatically on his android application. 
@@ -190,7 +189,7 @@ Here is the work flow of our project that gives basic idea about it:
 
 
 \subsection{Technical feasibility}
-For the development of proposed system, we will use latest technologies. Android studio is used for development of android application. Weka API is used for machine learning. Weka is a machine learning library for Java\cite{Weka}. BLE beacons are used for capturing RSSI signals. BLE beacons are small in size, light weight, cheaper and easily available. Android application\cite{android} connects with BLE beacons through Bluetooth. BLE RSS signals can have a higher sample rate than Wi-Fi RSS signals (0.25 Hz~2 Hz). BLE beacons can easily deploy as compared to other sensors existing in market. We have necessary skill sets for the implementation of this project. This project requires understanding of machine learning, development of android application and understanding of how application communicate with BLE beacons and server. So, considering all these things, it is clear that our project is highly technical feasible and higher chances to be completed.
+For the development of proposed system, we will use latest technologies. Android studio is used for development of android application. Weka API is used for machine learning. Weka is a machine learning library for Java. BLE beacons are used for capturing RSSI signals. BLE beacons are small in size, light weight, cheaper and easily available. Android application\cite{Localization} connects with BLE beacons through Bluetooth. BLE RSS signals can have a higher sample rate than Wi-Fi RSS signals (0.25 Hz~2 Hz). BLE beacons can easily deploy as compared to other sensors existing in market. We have necessary skill sets for the implementation of this project. This project requires understanding of machine learning, development of android application and understanding of how application communicate with BLE beacons and server. So, considering all these things, it is clear that our project is highly technical feasible and higher chances to be completed.
 \subsection{Operational feasibility}
 Operational feasibility means whether a proposed system is to be feasible at operational level. At user end, there is no additional hardware required. Users just need to install our android application on their smart phones which they easily get from play store. This application will guide the visitors of indoor building. In our case, visiting place will be CSE department. Students who do not familiar with campus rooms and activities are much likely to use this application. For this purpose, we conduct a market survey in order to know whether this project is acceptable for common people or not, 83.3 percent people find difficulty whenever they visit the place first time (see Figure 3). 58.3 percent people are interested in knowing their current indoor location and information related to it (see Figure 4). 91.7 percent people are interested in knowing the information of certain lab in textual as well as pictorial form on their mobile application (see Figure 5). 91.7 percent people think that this idea will bring ease to them (see Figure 6). This ensures the feasibility of our project at operational level.
 \\
@@ -222,7 +221,7 @@ Operational feasibility means whether a proposed system is to be feasible at ope
 \subsection{Economical feasibility}
 
 Economical feasibility means whether a project is economically feasible by analyzing the cost required for developing and using this project. We will have to implement our proposed system in one department i.e. CSE dept. On average BLE beacons transmits signals upto 80 meters. So, we need almost 6 to 8 beacons which is sufficient for indoor localization in one department. The price of one BLE beacon ranges from 5 dollars to 30 dollars. Prices differ due to beacon signal range, typical battery life (which can be several years), and other factors. For deploying an android application on play store requires 25 dollars which is nearly equal to Rs 3,921. User doesn't need any cost for the installation of this application. For the purpose of machine learning we will use Weka API which is free and open source library. Android studio is used for development of application is also freely available. Only cost
-involving factor is the purchasing of BLE beacons and publishing of Android application on play store. According to estimation, budget of this project is nearly Rs 8,601 which is affordable for us. So, this project is economically feasible.
+involving factor is the purchasing of BLE beacons\cite{belmonte2017indoor} and publishing of Android application on play store. According to estimation, budget of this project is nearly Rs 8,601 which is affordable for us. So, this project is economically feasible.
 
 \heading{Budget Plan}
 \begin{center}
@@ -307,61 +306,8 @@ Here are some Opportunities of our project:
 
 
 \section{References}
-\cite{akram2018censloc}.
-\cite{cooper2016loco}.
-\cite{hultgren2015evaluating}.
-\cite{zhuang2016smartphone}.
-\cite{Introduction}.
 
-\cite{Localization}.
-
-\cite{belmonte2017indoor}.
-\cite{wei2018end}.
 
 \bibliographystyle{plain}
 \bibliography{References}
-\begin{thebibliography}{9}
-\bibitem{research1} 
-Akram B.A., Akbar A.H., Wajid B., Shafiq O., Zafar A. (2019) LocSwayamwar: Finding a Suitable ML Algorithm for Wi-Fi Fingerprinting Based Indoor Positioning System. In: Boyaci A., Ekti A., Aydin M., Yarkan S. (eds) 
-International Telecommunications Conference. Lecture Notes in Electrical Engineering, vol 504. Springer, Singapore
-
-\bibitem{research2} 
-Matthew Cooper1, Jacob Biehl1, Gerry Filby1, Sven Kratz1. LoCo: boosting for indoor location classification combining Wi-Fi and BLE at 12 January 2016 Springer-Verlag London 2016
-
-\bibitem{research3} 
-Milton Hultgren, Dionysios Papathanopoulos. Evaluating the usage of Bluetooth Low Energy Beacons and Smartphones forIndoor Positioning Systems in Göteborg, Sweden June 2014
-
-
-\bibitem{research4}
-Yuan Zhuang., Jun Yang., Longning., Naser El-Sheimy. Smartphone-Based Indoor Localization with
-Bluetooth Low Energy Beacons in April 2016 National ASIC System Engineering Research Center, Southeast University, 2 Sipailou, Nanjing
-
-
-\bibitem{Introduction} 
-Indoor positioning system. [online] Available at: https://locatify.com/blog/indoor-positioning-systems-ble-beacons/
-
-\bibitem{lLoco} 
-Loco guided video. [online] Available at: https://www.youtube.com/watch?v=bjbSwUveuXs
-
-
-\bibitem{Weka} 
-Weka API. [online] Available at: https://www.cs.waikato.ac.nz/ml/weka/
-
-
-
-\bibitem{android} Indoor localization using mobile app. 
-[online] Available at: https://medium.com/cuelogic-technologies/beacons-with-
-mobile-app-7a5e42590c36
-
-\bibitem{systems}
-Óscar Belmonte-Fernández , Adrian Puertas-Cabedo, Joaquín Torres-Sospedra,
-Raúl Montoliu-Colás and Sergi Trilles-Oliver. An Indoor Positioning System Based on Wearables
-for Ambient-Assisted Living in 25 December 2016 Institute of New Imaging Technologies (INIT), Jaume I University, Av. Vicente Sos Baynat s/n,12071 Castelló de la Plana, Spain; jtorres@uji.es (J.T.-S.)
-
-\bibitem{imageR}
-YujieWeia and Burcu Akincia.End-to-end Image-based Indoor Localization for Facility
-Operation and Management in 35th International Symposium on Automation and Robotics in Construction (ISARC 2018), Carnegie Mellon University, United States of America
-
-
-\end{thebibliography}
 \end{document}
