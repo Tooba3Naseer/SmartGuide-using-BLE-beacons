@@ -24,8 +24,8 @@
 \contentsline {subsection}{\numberline {11.2}Software Requirements}{11}% 
 \contentsline {section}{\numberline {12}Timeline of the project}{12}% 
 \contentsline {section}{\numberline {13}Roles and activities of Team Members}{12}% 
-\contentsline {section}{\numberline {14}SWOT Analysis}{13}% 
-\contentsline {subsection}{\numberline {14.1}Limitations and challenges}{13}% 
+\contentsline {section}{\numberline {14}SWOT Analysis}{12}% 
+\contentsline {subsection}{\numberline {14.1}Limitations and challenges}{12}% 
 \contentsline {subsection}{\numberline {14.2}Strengths and Opportunities}{14}% 
 \contentsline {section}{\numberline {15}References}{15}% 
 \contentsline {section}{References}{15}% 
