@@ -1,0 +1,35 @@
+\contentsline {section}{\numberline {1}Introduction}{1}% 
+\contentsline {subsection}{\numberline {1.1}Overview of Project}{1}% 
+\contentsline {subsection}{\numberline {1.2}Background}{1}% 
+\contentsline {subsection}{\numberline {1.3}Motivation}{2}% 
+\contentsline {section}{\numberline {2}Goal of the project}{2}% 
+\contentsline {section}{\numberline {3}Objectives of the project}{2}% 
+\contentsline {subsection}{\numberline {3.1}Industry Objectives}{2}% 
+\contentsline {subsection}{\numberline {3.2}Research Objectives}{2}% 
+\contentsline {subsection}{\numberline {3.3}Academic Objectives}{3}% 
+\contentsline {section}{\numberline {4}Scope of the project}{3}% 
+\contentsline {section}{\numberline {5}Target Audience}{3}% 
+\contentsline {section}{\numberline {6}Possible Applications of work}{4}% 
+\contentsline {section}{\numberline {7}Existing System}{4}% 
+\contentsline {subsection}{\numberline {7.1}Comparison of Existing Systems}{4}% 
+\contentsline {subsection}{\numberline {7.2}Drawbacks of Existing Systems}{5}% 
+\contentsline {section}{\numberline {8}Problem Statement}{5}% 
+\contentsline {section}{\numberline {9}Proposed System}{6}% 
+\contentsline {section}{\numberline {10}Feasibility Study}{7}% 
+\contentsline {subsection}{\numberline {10.1}Technical feasibility}{7}% 
+\contentsline {subsection}{\numberline {10.2}Operational feasibility}{8}% 
+\contentsline {subsection}{\numberline {10.3}Economical feasibility}{11}% 
+\contentsline {section}{\numberline {11}System Requirements}{11}% 
+\contentsline {subsection}{\numberline {11.1}Hardware Requirements}{11}% 
+\contentsline {subsection}{\numberline {11.2}Software Requirements}{12}% 
+\contentsline {section}{\numberline {12}Timeline of the project}{12}% 
+\contentsline {section}{\numberline {13}Activity Network Diagram}{13}% 
+\contentsline {section}{\numberline {14}Critical Path Method}{13}% 
+\contentsline {section}{\numberline {15}Roles and activities of Team Members}{14}% 
+\contentsline {section}{\numberline {16}SWOT Analysis}{14}% 
+\contentsline {subsection}{\numberline {16.1}Limitations and challenges}{14}% 
+\contentsline {subsection}{\numberline {16.2}Strengths and Opportunities}{15}% 
+\contentsline {section}{\numberline {17}WhatIf Analysis}{16}% 
+\contentsline {section}{\numberline {18}Extensibility of our Project}{16}% 
+\contentsline {section}{\numberline {19}References}{18}% 
+\contentsline {section}{References}{18}% 
