@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="#FFFFFF"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context=".RoomInfo">
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="match_parent"
+        android:layout_height="239dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:srcCompat="@drawable/newcse" />
+
+    <ImageView
+        android:id="@+id/imgL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="21dp"
+        app:srcCompat="@android:drawable/ic_media_previous" />
+
+    <ImageView
+        android:id="@+id/imgL2"
+        android:layout_width="69dp"
+        android:layout_height="47dp"
+        android:layout_below="@+id/img1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="19dp"
+        app:srcCompat="@drawable/audio" />
+
+    <ImageView
+        android:id="@+id/imgR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img1"
+        android:layout_alignRight="@+id/img1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginRight="69dp"
+        app:srcCompat="@android:drawable/ic_media_next" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgL"
+        android:layout_alignRight="@id/txt2"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginRight="10dp"
+        android:text="Room No:"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/txt1b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgL"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="50dp"
+
+        android:text="SE-2.1"
+        android:textColorHint="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="7dp"
+        android:text="Room Name :"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/txt2b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt1b"
+        android:layout_alignLeft="@+id/txt1b"
+        android:layout_marginTop="10dp"
+        android:paddingTop="7dp"
+        android:text="Lab" />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt2"
+        android:layout_alignRight="@id/txt2"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="0dp"
+        android:text="Description :"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/txt3b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt2b"
+        android:layout_alignLeft="@+id/txt2b"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="12dp"
+        android:paddingTop="7dp"
+        android:text="Room details ....." />
+
+</RelativeLayout>
