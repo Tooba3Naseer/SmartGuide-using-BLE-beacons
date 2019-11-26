@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class adminsignup extends AppCompatActivity {
+public class AdminSignup extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
