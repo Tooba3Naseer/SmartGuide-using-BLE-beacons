@@ -40,6 +40,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 //import android.support.v7.app.AppCompatActivity;
 
@@ -66,9 +67,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private BroadcastReceiver_BTState mBTStateUpdateReceiver;
     private Scanner_BTLE mBTLeScanner;
 
-    Intent i = getIntent();
-    String room = i.getStringExtra("key");
+    private Intent intent;
    // Toast.makeText(MainActivity.this, "Generated :)", Toast.LENGTH_SHORT).show();
+
+
 
 
 
@@ -115,6 +117,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             requestPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 100);
         }
 
+
+
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -125,10 +129,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     dataList.add(obj.getName() + "." + obj.getBluetoothDevice().getAddress() + "." + obj.getRssi() + ".-");
                 }
 
-               editText = findViewById(R.id.editText);
-                // Calendar.getInstance().getTime().toString()
+                intent = getIntent();
+                String room = intent.getStringExtra("key");
+                String delay = intent.getStringExtra("delay");
+                String iter = intent.getStringExtra("iterations");
+                //int d = Integer.parseInt(delay);
+               /* for(int i=0; i < Integer.parseInt(iter) ; i++) {
+                    if (!mBTLeScanner.isScanning()) {
 
-                easyCsv.createCsvFile("BLE REPORT".concat(room.toString()), headerList, dataList, 100, new FileCallback() {
+                        try {
+                            Thread.sleep((1000 * d));
+                            startScan();
+                        }
+
+                        catch(InterruptedException ex)
+                        {
+                            Thread.currentThread().interrupt();
+                        }
+                        ;
+                }*/
+
+                easyCsv.createCsvFile("BLE REPORT".concat(room.toString()).concat(Calendar.getInstance().getTime().toString()), headerList, dataList, 100, new FileCallback() {
                     @Override
                     public void onSuccess(File file) {
 
@@ -146,6 +167,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
 
     }
+
+
+
 
 
 
