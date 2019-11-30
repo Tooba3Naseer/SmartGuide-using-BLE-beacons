@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AddPicture"></activity>
+        <activity android:name=".pictures"></activity>
+        <activity android:name=".view_office_hours" />
+        <activity android:name=".office_hours" />
+        <activity android:name=".AddPicture" />
         <activity android:name=".AddOfficeHours" />
         <activity android:name=".AdminDashboard" />
         <activity android:name=".AdminSignup" />

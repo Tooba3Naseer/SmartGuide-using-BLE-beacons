@@ -10,11 +10,11 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="144dp"
+        android:layout_height="68dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="34dp"
+        android:layout_marginTop="48dp"
         android:text="Admin Login"
         android:textColor="@color/design_default_color_primary_dark"
         android:textSize="24sp" />
