@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AddPicture"></activity>
+        <activity android:name=".OfficeHourMainPage"></activity>
+        <activity android:name=".RoomMemberMainPage" />
+        <activity android:name=".AddPicture" />
         <activity android:name=".AddOfficeHours" />
         <activity android:name=".AdminDashboard" />
         <activity android:name=".AdminSignup" />

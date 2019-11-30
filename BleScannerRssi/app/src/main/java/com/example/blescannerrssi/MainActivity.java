@@ -68,11 +68,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Scanner_BTLE mBTLeScanner;
 
     private Intent intent;
-   // Toast.makeText(MainActivity.this, "Generated :)", Toast.LENGTH_SHORT).show();
-
-
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -89,7 +84,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
         mBTStateUpdateReceiver = new BroadcastReceiver_BTState(getApplicationContext());
-        mBTLeScanner = new Scanner_BTLE(this, 5000, -75);
+        mBTLeScanner = new Scanner_BTLE(this, 7000, -75);
 
         mBTDevicesHashMap = new HashMap<>();
         mBTDevicesArrayList = new ArrayList<>();
@@ -209,21 +204,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onDestroy();
     }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
-        // Check which request we're responding to
-        if (requestCode == REQUEST_ENABLE_BT) {
-            // Make sure the request was successful
-            if (resultCode == RESULT_OK) {
-//                Utils.toast(getApplicationContext(), "Thank you for turning on Bluetooth");
-            } else if (resultCode == RESULT_CANCELED) {
-                Utils.toast(getApplicationContext(), "Please turn on Bluetooth");
-            }
-        } else if (requestCode == BTLE_SERVICES) {
-            // Do something
-        }
-    }
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
