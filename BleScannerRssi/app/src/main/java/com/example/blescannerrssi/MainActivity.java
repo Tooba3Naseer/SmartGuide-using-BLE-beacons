@@ -12,6 +12,7 @@ import android.location.Location;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -51,6 +52,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public static final int BTLE_SERVICES = 2;
     EditText editText, editText2, editText3;
 
+    int d;
+
+    String room;
+    String iter;
     EasyCsv easyCsv = new EasyCsv(MainActivity.this);
     List<String> headerList = new ArrayList<>();
     List<String> dataList = new ArrayList<>();
@@ -68,6 +73,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Scanner_BTLE mBTLeScanner;
 
     private Intent intent;
+   // Toast.makeText(MainActivity.this, "Generated :)", Toast.LENGTH_SHORT).show();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,7 +90,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
         mBTStateUpdateReceiver = new BroadcastReceiver_BTState(getApplicationContext());
-        mBTLeScanner = new Scanner_BTLE(this, 7000, -75);
+        mBTLeScanner = new Scanner_BTLE(this, 5000, -75);
 
         mBTDevicesHashMap = new HashMap<>();
         mBTDevicesArrayList = new ArrayList<>();
@@ -119,55 +125,74 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             public void onClick(View view) {
 
 
-                for (BTLE_Device obj : mBTDevicesArrayList)
-                {
-                    dataList.add(obj.getName() + "." + obj.getBluetoothDevice().getAddress() + "." + obj.getRssi() + ".-");
-                }
+
+
 
                 intent = getIntent();
-                String room = intent.getStringExtra("key");
+                room = intent.getStringExtra("key");
                 String delay = intent.getStringExtra("delay");
-                String iter = intent.getStringExtra("iterations");
-                //int d = Integer.parseInt(delay);
-               /* for(int i=0; i < Integer.parseInt(iter) ; i++) {
-                    if (!mBTLeScanner.isScanning()) {
+                iter = intent.getStringExtra("iterations");
+                int iter1 = Integer.parseInt(iter);
+                d = Integer.parseInt(delay);
+                doSomething(0, iter1, d);
 
-                        try {
-                            Thread.sleep((1000 * d));
-                            startScan();
+
+
+
+
+                   /* new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            for(int i=0; i < Integer.parseInt(iter) ; i++) {
+                                // if (!mBTLeScanner.isScanning() ) {
+                                for (BTLE_Device obj : mBTDevicesArrayList) {
+
+                                    dataList.add(obj.getName() + "." + obj.getBluetoothDevice().getAddress() + "." + obj.getRssi() + ".-");
+                                }
+                                startScan();
+                                // do something after 2s = 2000 miliseconds
+                                easyCsv.createCsvFile("BLE REPORT".concat(room.toString()).concat(Calendar.getInstance().getTime().toString()), headerList, dataList, 100, new FileCallback() {
+
+                                    @Override
+                                    public void onSuccess(File file) {
+                                        Toast.makeText(MainActivity.this, "Generated :)", Toast.LENGTH_SHORT).show();
+
+                                    }
+
+                                    @Override
+                                    public void onFail(String err) {
+                                        Toast.makeText(MainActivity.this, "Generating Failed :(", Toast.LENGTH_SHORT).show();
+                                    }
+
+                                });
+                            }
                         }
-
-                        catch(InterruptedException ex)
-                        {
-                            Thread.currentThread().interrupt();
-                        }
-                        ;
-                }*/
-
-                easyCsv.createCsvFile("BLE REPORT".concat(room.toString()).concat(Calendar.getInstance().getTime().toString()), headerList, dataList, 100, new FileCallback() {
-                    @Override
-                    public void onSuccess(File file) {
-
-                        Toast.makeText(MainActivity.this, "Generated :)", Toast.LENGTH_SHORT).show();
-                    }
-
-                    @Override
-                    public void onFail(String err) {
-                        Toast.makeText(MainActivity.this, "Generating Failed :(", Toast.LENGTH_SHORT).show();
-                    }
-                });
+                    }, 1000*d); */
+                        /*startScan();
 
 
-            }
+
+                          ;*/
+
+                        //
+
+
+
+
+
+
+
+                //}
+                }
+
+
+
+
+
         });
 
+
     }
-
-
-
-
-
-
 
     @Override
     protected void onStart() {
@@ -204,7 +229,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onDestroy();
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
+        // Check which request we're responding to
+        if (requestCode == REQUEST_ENABLE_BT) {
+            // Make sure the request was successful
+            if (resultCode == RESULT_OK) {
+//                Utils.toast(getApplicationContext(), "Thank you for turning on Bluetooth");
+            } else if (resultCode == RESULT_CANCELED) {
+                Utils.toast(getApplicationContext(), "Please turn on Bluetooth");
+            }
+        } else if (requestCode == BTLE_SERVICES) {
+            // Do something
+        }
+    }
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -356,5 +395,38 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
 
         }
+    }
+
+    public void doSomething(final int j, final int iter1, final int d) {
+
+        new Handler().postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+                if (j < iter1) {
+                    for (BTLE_Device obj : mBTDevicesArrayList) {
+
+                        dataList.add(obj.getName() + "." + obj.getBluetoothDevice().getAddress() + "." + obj.getRssi() + ".-");
+                    }
+                    startScan();
+                    // do something after 2s = 2000 miliseconds
+                    easyCsv.createCsvFile("BLE REPORT".concat(room.toString()).concat(Calendar.getInstance().getTime().toString()), headerList, dataList, 100, new FileCallback() {
+
+                        @Override
+                        public void onSuccess(File file) {
+                            Toast.makeText(MainActivity.this, "Generated :)", Toast.LENGTH_SHORT).show();
+
+                        }
+
+                        @Override
+                        public void onFail(String err) {
+                            Toast.makeText(MainActivity.this, "Generating Failed :(", Toast.LENGTH_SHORT).show();
+                        }
+
+                    });
+                    doSomething(j+1, iter1, d);
+                }
+            }
+        }, 3000 * d);
     }
 }
