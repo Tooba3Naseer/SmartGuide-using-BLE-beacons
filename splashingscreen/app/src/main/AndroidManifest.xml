@@ -11,8 +11,6 @@
         android:theme="@style/AppTheme">
         <activity android:name=".NearbyRoomsInfo"></activity>
         <activity android:name=".RoomInfo" />
-        <activity android:name=".AdminSignup" />
-        <activity android:name=".AdminLogin" />
         <activity android:name=".Activity_Room_Loc" />
         <activity
             android:name=".SplashScreenActivity"
