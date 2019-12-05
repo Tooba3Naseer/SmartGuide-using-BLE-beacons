@@ -34,7 +34,7 @@ public class labels extends AppCompatActivity {
                 intent.putExtra("key", editText.getText().toString());
                 intent.putExtra("delay", editText3.getText().toString());
                 intent.putExtra("iterations", editText2.getText().toString());
-                Toast.makeText(labels.this,editText.getText().toString() , Toast.LENGTH_SHORT).show();
+                //Toast.makeText(labels.this,editText.getText().toString() , Toast.LENGTH_SHORT).show();
 
                 startActivity(intent);
             }

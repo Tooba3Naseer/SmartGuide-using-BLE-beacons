@@ -312,12 +312,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         mBTDevicesArrayList.clear();
         mBTDevicesHashMap.clear();
-
+        dataList.clear();
         mBTLeScanner.start();
     }
 
     public void stopScan() {
-        btn_Scan.setText("Scan Again");
+        btn_Scan.setText("Start Scan");
 
         mBTLeScanner.stop();
 
@@ -408,25 +408,33 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                         dataList.add(obj.getName() + "." + obj.getBluetoothDevice().getAddress() + "." + obj.getRssi() + ".-");
                     }
-                    startScan();
+
                     // do something after 2s = 2000 miliseconds
-                    easyCsv.createCsvFile("BLE REPORT".concat(room.toString()).concat(Calendar.getInstance().getTime().toString()), headerList, dataList, 100, new FileCallback() {
+                    easyCsv.createCsvFile("BLE REPORT_".concat(room.toString()).concat("_").concat(Calendar.getInstance().getTime().toString()), headerList, dataList, 100, new FileCallback() {
 
                         @Override
                         public void onSuccess(File file) {
-                            Toast.makeText(MainActivity.this, "Generated :)", Toast.LENGTH_SHORT).show();
+                            String str = Integer.toString(j+1);
+                            Toast.makeText(MainActivity.this, "Generated_".concat(str), Toast.LENGTH_SHORT).show();
 
                         }
 
                         @Override
                         public void onFail(String err) {
-                            Toast.makeText(MainActivity.this, "Generating Failed :(", Toast.LENGTH_SHORT).show();
+                            String str = Integer.toString(j+1);
+                            Toast.makeText(MainActivity.this, "Generating Failed_".concat(str), Toast.LENGTH_SHORT).show();
                         }
 
                     });
+                    if(j+1 != iter1)
+                    {startScan();}
+                    for(int b=0; b< 1000000; b++);
+                        for(int c=0; c< 1000000; c++);
+                            for(int d=0; d< 1000000; d++);
+
                     doSomething(j+1, iter1, d);
                 }
             }
-        }, 3000 * d);
+        }, 1000 *d);
     }
 }
