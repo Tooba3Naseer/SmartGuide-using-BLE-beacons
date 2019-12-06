@@ -42,6 +42,10 @@ for i=1:length(cellarray_data)
         end
     end
 end
+for i=1:length(cellarray_data)
+     a = cellfun(@str2double,cellarray_data(i,1:length(MacAddresses))); % convert cell array to vector
+     cellarray_data(i,1:length(MacAddresses)) = num2cell(a*-1); % negate all RSSI values,convert vector to cell array 
+end
 T = cell2table(cellarray_data(1:end,:),'VariableNames', {'MacAddr1','MacAddr2', 'RoomLabel'}); % convert cell array into table
 writetable(T,'dataset.csv') % write into csv file
 
