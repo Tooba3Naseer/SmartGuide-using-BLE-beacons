@@ -11,8 +11,10 @@ for k=3:(length(Files)-2)
    while FileName(iter1) ~= '_'
        iter1 = iter1+1;
    end
+    
    v = T.DEVICE_NAME;  % fetch row values of device_name column from table
    m = T.MAC_ADDRESS;  % fetch row values of mac_adddress column from table
+   if ~isempty(m)
    MacAdd = [MacAdd, m(1)];
    for i=1:(length(v)/2)
        RSSI_values = [RSSI_values, v(2*i)]; % get RSSI values, eliminate null values and store in vector
@@ -27,9 +29,10 @@ for k=3:(length(Files)-2)
            end
        end
    end
-   cellarray_data(counter,(length(MacAddresses)+1)) = cellstr(FileName(12:iter1-1)); % add room label value in cell array
+   cellarray_data(counter,(length(MacAddresses)+1)) = cellstr(FileName(12:(iter1-1))); % add room label value in cell array
    % cellstr convert string into cell
    counter=counter+1;
+   end
    RSSI_values = [];
    MacAdd =[];
 end
