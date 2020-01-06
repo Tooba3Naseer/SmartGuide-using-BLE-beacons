@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".RoomMembersMainPage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="121dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-8dp"
+        tools:layout_editor_absoluteY="335dp">
+
+
+        <SearchView
+            android:layout_width="346dp"
+            android:layout_height="37dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="-13dp"
+            android:layout_toStartOf="@+id/iBtnSearch"
+            android:background="#d3d3d3"
+            android:text="Search..."
+            android:textColor="#000000"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="109dp">
+
+        </SearchView>
+
+        <ImageButton
+            android:id="@+id/iBtnAdd"
+            android:layout_width="60dp"
+            android:layout_height="59dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="58dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginBottom="102dp"
+            android:background="#ffffff"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/plus"
+            tools:layout_editor_absoluteX="285dp"
+            tools:layout_editor_absoluteY="182dp" />
+
+        <ImageButton
+            android:id="@+id/iBtnSearch"
+            android:layout_width="49dp"
+            android:layout_height="34dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="13dp"
+            android:background="#ffffff"
+            android:padding="1dp"
+            android:scaleType="fitXY"
+            android:text="Search"
+            app:srcCompat="@drawable/search"
+            tools:layout_editor_absoluteX="328dp"
+            tools:layout_editor_absoluteY="115dp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+
+        >
+
+        <ListView
+            android:id="@+id/lvRoom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+</LinearLayout>
+
