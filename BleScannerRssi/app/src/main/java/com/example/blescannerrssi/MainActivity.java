@@ -73,6 +73,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Scanner_BTLE mBTLeScanner;
 
     private Intent intent;
+    String userid;
    // Toast.makeText(MainActivity.this, "Generated :)", Toast.LENGTH_SHORT).show();
 
     @Override
@@ -132,6 +133,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 room = intent.getStringExtra("key");
                 String delay = intent.getStringExtra("delay");
                 iter = intent.getStringExtra("iterations");
+                userid = intent.getStringExtra("userid");
                 int iter1 = Integer.parseInt(iter);
                 d = Integer.parseInt(delay);
                 doSomething(0, iter1, d);
@@ -409,8 +411,31 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         dataList.add(obj.getName() + "." + obj.getBluetoothDevice().getAddress() + "." + obj.getRssi() + ".-");
                     }
 
+                    Calendar now = Calendar.getInstance();
+                    int year = now.get(Calendar.YEAR);
+                    int month = now.get(Calendar.MONTH) + 1; // Note: zero based!
+                    int day = now.get(Calendar.DAY_OF_MONTH);
+                    int hour = now.get(Calendar.HOUR_OF_DAY);
+                    int minute = now.get(Calendar.MINUTE);
+                    int second = now.get(Calendar.SECOND);
+                    String m1,d1,h1,min1,s1;
+                    m1 = Integer.toString(month);
+                    d1 = Integer.toString(day);
+                    h1 = Integer.toString(hour);
+                    min1 = Integer.toString(minute);
+                    s1 = Integer.toString(second);
+                    if(month < 10)
+                        m1 = "0" + Integer.toString(month);
+                    if(day < 10)
+                        d1 = "0" + Integer.toString(day);
+                    if(hour < 10)
+                        h1 = "0" + Integer.toString(hour);
+                    if(minute < 10)
+                        min1 = "0" + Integer.toString(minute);
+                    if(second < 10)
+                        s1 = "0" + Integer.toString(second);
                     // do something after 2s = 2000 miliseconds
-                    easyCsv.createCsvFile("BLE REPORT_".concat(room.toString()).concat("_").concat(Calendar.getInstance().getTime().toString()), headerList, dataList, 100, new FileCallback() {
+                    easyCsv.createCsvFile("BLE_".concat(room.toString()).concat("_").concat(Integer.toString(year)).concat(m1).concat(d1).concat(h1).concat(min1).concat(s1).concat("_").concat(userid), headerList, dataList, 100, new FileCallback() {
 
                         @Override
                         public void onSuccess(File file) {
