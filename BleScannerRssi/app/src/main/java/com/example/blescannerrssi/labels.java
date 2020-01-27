@@ -12,7 +12,7 @@ import android.widget.Toast;
 public class labels extends AppCompatActivity {
 
     private Button btn_Start;
-    public EditText editText, editText2, editText3;
+    public EditText editText, editText2, editText3, editText4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,7 @@ public class labels extends AppCompatActivity {
         editText = (EditText) findViewById(R.id.editText);
         editText2 = (EditText) findViewById(R.id.editText2);
         editText3 = (EditText) findViewById(R.id.editText3);
-
+        editText4 = (EditText) findViewById(R.id.editText4);
 
         findViewById(R.id.btnS).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,6 +34,7 @@ public class labels extends AppCompatActivity {
                 intent.putExtra("key", editText.getText().toString());
                 intent.putExtra("delay", editText3.getText().toString());
                 intent.putExtra("iterations", editText2.getText().toString());
+                intent.putExtra("userid", editText4.getText().toString());
                 //Toast.makeText(labels.this,editText.getText().toString() , Toast.LENGTH_SHORT).show();
 
                 startActivity(intent);

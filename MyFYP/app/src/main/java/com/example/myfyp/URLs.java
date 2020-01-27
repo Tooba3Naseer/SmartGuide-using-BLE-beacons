@@ -1,7 +1,7 @@
 package com.example.myfyp;
 
 public class URLs {
-    private static final String ROOT_URL = "http://10.5.4.86/Admin/Api.php?apicall=";
+    private static final String ROOT_URL = "http://192.168.8.104/Test2/Api.php?apicall=";
 
     public static final String URL_REGISTER = ROOT_URL + "signup";
     public static final String URL_LOGIN= ROOT_URL + "login";
@@ -10,7 +10,7 @@ public class URLs {
     public static final String URL_CREATE_OffHOURS= ROOT_URL + "createofficehours";
     public static final String URL_CREATE_PIC = ROOT_URL + "createpicture";
 
-    public static final String ROOT_URL2 = "http://10.5.4.86/Admin/RoomApi.php?apicall=";
+    public static final String ROOT_URL2 = "http://192.168.8.104/Test2/RoomApi.php?apicall=";
 
 
     public static final String URL_READ_ROOM = ROOT_URL2 + "getrooms";
