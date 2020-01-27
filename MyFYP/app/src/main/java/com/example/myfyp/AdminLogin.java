@@ -60,11 +60,7 @@ public class AdminLogin extends AppCompatActivity {
             editTextUsername.requestFocus();
             return;
         }
-        if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            editTextUsername.setError("Enter a valid email");
-            editTextUsername.requestFocus();
-            return;
-        }
+
 
         if (TextUtils.isEmpty(password)) {
             editTextPassword.setError("Please enter your password");
@@ -103,10 +99,11 @@ public class AdminLogin extends AppCompatActivity {
 
             @Override
             protected void onPostExecute(String s) {
+                String sENF = "SFHDJK";
+
                 super.onPostExecute(s);
                 //hiding the progressbar after completion
                 progressBar.setVisibility(View.GONE);
-                String sENF = "SFHDJK";
 
 
                 try {
@@ -115,10 +112,7 @@ public class AdminLogin extends AppCompatActivity {
 
                     //if no error in response
                     if (!obj.getBoolean("error")) {
-                      //  Toast.makeText(getApplicationContext(), obj.getString("message"), Toast.LENGTH_SHORT).show();
-                        // Toast.makeText(getApplicationContext(), "login success", Toast.LENGTH_SHORT).show();
-
-                        //starting the profile activity
+                           //starting the profile activity
                         finish();
                         startActivity(new Intent(AdminLogin.this, AdminDashboard.class));
 
@@ -130,7 +124,7 @@ public class AdminLogin extends AppCompatActivity {
                 }
 
             }
-            }
+        }
 
         UserLogin ul = new UserLogin();
         ul.execute();

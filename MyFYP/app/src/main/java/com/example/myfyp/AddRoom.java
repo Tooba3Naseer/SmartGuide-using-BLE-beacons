@@ -10,15 +10,12 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.ProgressBar;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -40,7 +37,6 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-
 import javax.net.ssl.HttpsURLConnection;
 
 public class AddRoom extends AppCompatActivity {
@@ -245,7 +241,6 @@ public class AddRoom extends AppCompatActivity {
         startActivityForResult(
                 Intent.createChooser(intent, "Select an Audio"), 1);
     }
-
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -258,7 +253,6 @@ public class AddRoom extends AppCompatActivity {
             }
         }
     }
-
 
     public String getPath(Uri uri) {
         Cursor cursor = getContentResolver().query(uri, null, null, null, null);
@@ -276,6 +270,7 @@ public class AddRoom extends AppCompatActivity {
 
         return path;
     }
+
     public class DataParser  extends AsyncTask<Void,Void,Integer> {
 
         Context c;

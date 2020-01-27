@@ -1,8 +1,8 @@
 package com.example.myfyp;
 
 public class Room {
-    private int id;
-    private String name, Roomno, desc;
+    private static int id;
+    private static String name, Roomno, desc, LeftRoomno , RightRoomno ,FrontRoomno ,BackRoomno;
 
     public Room(int id, String name, String Roomno,String desc) {
         this.id = id;
@@ -11,7 +11,7 @@ public class Room {
         this.desc = desc;
     }
 
-    public int getId() {
+    public static int getId() {
         return id;
     }
     public void setId(int id) {
@@ -19,7 +19,7 @@ public class Room {
     }
 
 
-    public String getName() {
+    public static String getName() {
         return name;
     }
 
@@ -28,19 +28,34 @@ public class Room {
     }
 
 
-    public String getRoomno() {
+    public static String getRoomno() {
         return Roomno;
 
     }
     public void setRoomno(String RoomNo) {
         this.Roomno = RoomNo;
     }
-
-    public String getDesc() {
+    public static String getDesc() {
         return desc;
     }
     public void setDesc(String desc) {
         this.desc = desc;
+    }
+    public static String getLeftRoomno() {
+        return LeftRoomno;
+
+    }
+    public static String getRightRoomno() {
+        return RightRoomno;
+
+    }
+    public static String getFrontRoomno() {
+        return FrontRoomno;
+
+    }
+    public static String getBackRoomno() {
+        return BackRoomno;
+
     }
 
 }

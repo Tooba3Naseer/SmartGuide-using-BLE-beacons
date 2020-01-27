@@ -69,7 +69,7 @@ public class AddPictures extends AppCompatActivity {
     private static final int PICK_FILE_REQUEST = 1;
     private static final String TAG = MainActivity.class.getSimpleName();
     private String selectedFilePath;
-    private String SERVER_URL = "http://10.5.4.86/Admin/UploadToServer.php";
+    private String SERVER_URL = "http://192.168.1.100/Admin/UploadToServer.php";
     ImageView ivAttachment;
 
     ProgressDialog dialog;
@@ -246,9 +246,9 @@ public class AddPictures extends AppCompatActivity {
 
     public void chooseImage() {
         Intent intent = new Intent();
-        intent.setType("image/*");
 
         intent.setAction(Intent.ACTION_GET_CONTENT);
+        intent.setType("image/*");
         startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE_REQUEST);
     }
     @Override
@@ -258,7 +258,7 @@ public class AddPictures extends AppCompatActivity {
         if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK && data != null && data.getData() != null) {
 
             Uri uri = data.getData();
-            selectedFilePath = FilePath.getPath(this, uri);
+            selectedFilePath = FilePath.getPath(AddPictures.this, uri);
 
             try {
                 Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), uri);
@@ -268,13 +268,15 @@ public class AddPictures extends AppCompatActivity {
                 if (selectedFilePath != null && !selectedFilePath.equals("")) {
                     tvFileName.setText(selectedFilePath);
                 } else {
-                    Toast.makeText(this, "Cannot upload file to server", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Cannot upload", Toast.LENGTH_SHORT).show();
                 }
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
     }
+
+
     public class DataParser  extends AsyncTask<Void,Void,Integer> {
 
         Context c;
@@ -353,7 +355,7 @@ public class AddPictures extends AppCompatActivity {
                     r.setName(name);
                     r.setRoomno(roomNo);
                     r.setDesc(description);
-                     //  roomList.add(r);
+                    //  roomList.add(r);
                     // Populate spinner with country names
                     roomNameList.add(jo.optString("RoomNo"));
 
