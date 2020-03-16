@@ -2,7 +2,6 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-from mpl_toolkits import mplot3d
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
@@ -26,7 +25,7 @@ n_estimators = [200,500,1000]
 max_features = ['auto', 'sqrt']
 
 # max depth of tree, by using max depth, we can avoid overfitting
-max_depth = [10,25,100]
+max_depth = [25,32]
 # create random grid
 random_grid = {
  'n_estimators': n_estimators,
@@ -50,47 +49,50 @@ print(RFC_random.best_score_)
 means = RFC_random.cv_results_['mean_test_score']
 stds = RFC_random.cv_results_['std_test_score']
 
-# plot 2 graphs
+# plot 3 graphs
 
 scores=[]
-maxDepths =[]
 estimators=[]
 for mean, std, params in zip(means, stds, RFC_random.cv_results_['params']):
-    if params['max_features'] == 'auto':
+    if params['max_features'] == 'sqrt' and params['max_depth'] == 25 :
         estimators.append(params['n_estimators'])
-        maxDepths.append(params['max_depth'])
         scores.append(mean)
 
-# plotting of 3d figure
-fig = plt.figure()
-ax = plt.axes(projection='3d')
-
-# Data for a three-dimensional line
-ax.plot3D(estimators, maxDepths, scores, 'blue')
-ax.set_title("Accuracy score using maximum features = auto")
-ax.set_ylabel('Max depth of trees')
-ax.set_xlabel('Number of decision trees')
-ax.set_zlabel('Accuracy')
+plt.plot(estimators, scores)
+plt.ylabel('Accuracy')
+plt.xlabel('Number of Decision Trees')
+plt.title("Impact of Number of Trees")
+plt.show()
 
 scores=[]
-maxDepths =[]
-estimators=[]
+maxDepth=[]
 for mean, std, params in zip(means, stds, RFC_random.cv_results_['params']):
-    if params['max_features'] == 'sqrt':
-        estimators.append(params['n_estimators'])
-        maxDepths.append(params['max_depth'])
+    if params['max_features'] == 'sqrt' and params['n_estimators'] == 500 :
+        maxDepth.append(params['max_depth'])
         scores.append(mean)
 
-# plotting of 3d figure
-fig = plt.figure()
-ax = plt.axes(projection='3d')
+plt.plot(maxDepth, scores)
+plt.ylabel('Accuracy')
+plt.xlabel(' Maximum Depth')
+plt.title("Impact of Maximum Depth")
+plt.show()
 
-# Data for a three-dimensional line
-ax.plot3D(estimators, maxDepths, scores, 'blue')
-ax.set_title("Accuracy score using maximum features = sqrt")
-ax.set_ylabel('Max depth of trees')
-ax.set_xlabel('Number of decision trees')
-ax.set_zlabel('Accuracy')
+scores=[]
+max_features=[]
+for mean, std, params in zip(means, stds, RFC_random.cv_results_['params']):
+    if params['n_estimators'] == 500 and params['max_depth'] == 25 :
+        if params['max_features'] == 'sqrt':
+            max_features.append(5)
+        else:
+            max_features.append(24)
+        scores.append(mean)
+
+plt.plot(max_features, scores)
+plt.ylabel('Accuracy')
+plt.xlabel('Maximum Features')
+plt.title("Impact of Maximum Features")
+plt.show()
+
 
 
 
@@ -106,28 +108,48 @@ forest.fit(X_train,y_train)
 # Predicting the Test set results
 y_pred = forest.predict(X_test)
 
-# Making the Confusion Matrix
+# Predicting the Training set results
+y_pred1 = forest.predict(X_train)
+
+# Making the Confusion Matrix for test data
 cm = confusion_matrix(y_test, y_pred)
 cm
 plt.matshow(cm)
 cm
 
-# calculate precison and recall
+# calculate precison and recall of test data
 recall = np.diag(cm) / np.sum(cm, axis = 1)
 precision = np.diag(cm) / np.sum(cm, axis = 0)
 
 # To get overall measures of precision and recall, use then
-print('Precision: %f' % np.mean(precision))
-print('Recall: %f' % np.mean(recall))
+print('Testing Precision: %f' % np.mean(precision))
+print('Testing Recall: %f' % np.mean(recall))
+
+# Making the Confusion Matrix for training data
+cm = confusion_matrix(y_train, y_pred1)
+cm
+plt.matshow(cm)
+cm
+
+# calculate precison and recall of train data
+recall1 = np.diag(cm) / np.sum(cm, axis = 1)
+precision1 = np.diag(cm) / np.sum(cm, axis = 0)
+
+# To get overall measures of precision and recall, use then
+print('Training Precision: %f' % np.mean(precision1))
+print('Training Recall: %f' % np.mean(recall1))
 
 
 # Save the trained model as a pickle string. 
 # Save the model to disk
-pickle.dump(forest, open('F:/FYP Project Data/TrainedModel1.model', 'wb'))
+pickle.dump(forest, open('F:/CE DATA/TrainedModel1.model', 'wb'))
 # Load the pickled model
-model = pickle.load(open('F:/FYP Project Data/TrainedModel1.model', 'rb'))
+model = pickle.load(open('F:/CE DATA/TrainedModel1.model', 'rb'))
 # calculate accuracy on training data
 training_accuracy = model.score(X_train, y_train)
+print('Training Accuracy: %f' % training_accuracy)
 # calculate accuracy on test data
 testing_accuracy = model.score(X_test, y_test)
-print('Accuracy: %f' % testing_accuracy)
+print('Testing Accuracy: %f' % testing_accuracy)
+
+

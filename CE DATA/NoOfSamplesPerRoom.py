@@ -52,7 +52,7 @@ def main():
          count[20] = count[20]+1
       elif label == 'L22':
          count[21] = count[21]+1
-      else:
+      elif label == 'L23':
          count[22] = count[22]+1
    print(count)
       

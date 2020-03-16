@@ -112,27 +112,48 @@ classifier.fit(X_train, y_train)
 # Predicting the Test set results
 y_pred = classifier.predict(X_test)
 
-# Making the Confusion Matrix
+# Predicting the Training set results
+y_pred1 = classifier.predict(X_train)
+
+# Making the Confusion Matrix for test data
 cm = confusion_matrix(y_test, y_pred)
 cm
 plt.matshow(cm)
 cm
 
-# calculate precison and recall
+# calculate precison and recall of test data
 recall = np.diag(cm) / np.sum(cm, axis = 1)
 precision = np.diag(cm) / np.sum(cm, axis = 0)
 
 # To get overall measures of precision and recall, use then
-print('Precision: %f' % np.mean(precision))
-print('Recall: %f' % np.mean(recall))
+print('Testing Precision: %f' % np.mean(precision))
+print('Testing Recall: %f' % np.mean(recall))
+
+# Making the Confusion Matrix for training data
+cm = confusion_matrix(y_train, y_pred1)
+cm
+plt.matshow(cm)
+cm
+
+# calculate precison and recall of train data
+recall1 = np.diag(cm) / np.sum(cm, axis = 1)
+precision1 = np.diag(cm) / np.sum(cm, axis = 0)
+
+# To get overall measures of precision and recall, use then
+print('Training Precision: %f' % np.mean(precision1))
+print('Training Recall: %f' % np.mean(recall1))
+
 
 # Save the trained model as a pickle string. 
 # Save the model to disk
-pickle.dump(classifier, open('F:/FYP Project Data/TrainedModel.model', 'wb'))
+pickle.dump(classifier, open('F:/CE DATA/TrainedModel.model', 'wb'))
 # Load the pickled model
-model = pickle.load(open('F:/FYP Project Data/TrainedModel.model', 'rb'))
+model = pickle.load(open('F:/CE DATA/TrainedModel.model', 'rb'))
 # calculate accuracy on training data
 training_accuracy = model.score(X_train, y_train)
+print('Training Accuracy: %f' % training_accuracy)
 # calculate accuracy on test data
 testing_accuracy = model.score(X_test, y_test)
-print('Accuracy: %f' % testing_accuracy)
+print('Testing Accuracy: %f' % testing_accuracy)
+
+
