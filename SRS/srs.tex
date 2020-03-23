@@ -190,9 +190,6 @@ Deployment of BLE beacons on the ceiling is the requirement to capture fingerpri
 \heading{Bluetooth scanning for nearby devices}
 A scanning function is made in data capturing application to scan BLE beacon for nearby mobile devices. Devices who present/locate near a certain BLE beacon are being scanned.
 
-\heading{Connectivity of BLE beacons with mobile Bluetooth}
-After finding Fingerprints for different BLE beacons to different devices, BLE beacon will be connected to that mobile device from which it is receiving high strength (RSSI) value.
-
 \heading{Capture RSSI values for nearby beacons}
 BLE beacons Bluetooth range exists in a certain region and this region contain different mobile devices far and near to BLE beacon depending upon their indoor location. So, this function will capture RSSI fingerprints for all mobile devices which being scanned in that certain region.
 \heading{Add delay factor to capture FP’s}
@@ -201,8 +198,6 @@ Once fingerprints of certain mobile device have been captured at a particular lo
 Automatic restart scanning function will scan for BLE beacon nearby mobile devices once scanning has been stops, because in this way our system will able to automatically find coming and going devices in a particular region and provide rooms information accordingly.
 \heading{Generate .csv file for each BLE beacon}
 After capturing the fingerprints of all devices with a single BLE beacon which lie in that certain region, this function will generate .csv file and RSSI values of all devices in that file.
-\heading{Use .csv files to train a model}
-After generating all .csv files of all mobile devices with BLE beacons from which they are receiving signal strengths, this function will use these files to a train a model on this particular dataset.
 \textbf{\textbf{
 \subsubsection{SmartGuide: Android Application}}}
 The functional requirements of our system for User are as follows:
