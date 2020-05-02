@@ -13,7 +13,7 @@ from tensorflow.python.framework.ops import disable_eager_execution
 disable_eager_execution()
 #X = dataset.iloc[1:21, [0,1]].values
 #y = dataset.iloc[1:21, 2].values
-dataset = pd.read_csv('C:/Users/MLogix/Desktop/7th Semester/dataset/Algorithms/dataset.csv')
+dataset = pd.read_csv('C:/Users/HP 820/Documents/GitHub/SmartGuide-using-BLE-beacons/CE DATA/Randomforest/dataset.csv')
 
 # drop the missing values
 dataset.dropna(inplace=True)
@@ -21,13 +21,13 @@ dataset.dropna(inplace=True)
 # Ignore all GPUs, tf random forest does not benefit from it.
 num_steps = 500 # Total steps to train
 batch_size = 512 # The number of samples per batch
-num_classes = 24 # The 10 digits
-num_features = 784 # Each image is 28x28 pixels
+num_classes = 24
+num_features = 784 
 num_trees = 10
 max_nodes = 1000
 
-input_x = dataset.iloc[1:5200, [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23]].values
-input_y = dataset.iloc[1:5200, 24].values
+input_x = dataset.iloc[1:, 0:24].values
+input_y = dataset.iloc[1:, 24].values
 
 # Splitting the dataset into the Training set and Test set
 
@@ -101,6 +101,7 @@ for i in range(1, num_steps + 1):
 
 
 print("Test Accuracy:", sess.run(accuracy_op, feed_dict={X: X_test, Y: y_test}))
+
 #from tensorflow import keras
 #keras_file = "rf.h5"
 #keras.models.save_model(sess.run, keras_file)
@@ -108,11 +109,11 @@ print("Test Accuracy:", sess.run(accuracy_op, feed_dict={X: X_test, Y: y_test}))
 oSaver = tf.train.Saver()
 
 oSess = sess
-oSaver.save(oSess,'C:/Users/MLogix/Desktop/7th Semester/dataset/Algorithms/dataset.ckpt')
+oSaver.save(oSess,'C:/Users/HP 820/Documents/GitHub/SmartGuide-using-BLE-beacons/CE DATA/Randomforest/dataset.ckpt')
   #filename ends with .ckpt
 # Convert the model into TF Lite.
 
-oSaver.save(oSess, "C:/Users/MLogix/Desktop/7th Semester/dataset/Algorithms/datasetmodel.h5")
+oSaver.save(oSess, "C:/Users/HP 820/Documents/GitHub/SmartGuide-using-BLE-beacons/CE DATA/Randomforest/datasetmodel.h5")
 
 #
 #converter = tf.lite.TFLiteConverter.from_saved_model('datasetmodel.pb')
@@ -122,7 +123,7 @@ from tensorflow import keras
 from tensorflow.contrib import lite
 #keras_file = "rf.h5"
 #keras.models.save_model(sess, keras_file)
-keras.models.save_model(oSess, 'C:/Users/MLogix/Desktop/7th Semester/dataset/Algorithms/datasetmodel')
+keras.models.save_model(oSess, 'C:/Users/HP 820/Documents/GitHub/SmartGuide-using-BLE-beacons/CE DATA/Randomforest/datasetmodel')
 
 converter = lite.TFLiteConverter.from_saved_model('datasetmodel')
 tflite_model = converter.convert()
