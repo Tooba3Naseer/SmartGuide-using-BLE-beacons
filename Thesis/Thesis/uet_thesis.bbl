@@ -1,0 +1,52 @@
+\begin{thebibliography}{8}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[GAL()]{GALILEO}
+Galileo european global navigation satellite system { [Online] Available at:}.
+\newblock
+  \url{https://www.gsa.europa.eu/european-gnss/galileo/galileo-european-global-satellite-based-navigation-system
+  }.
+
+\bibitem[GPS({\natexlab{a}})]{GPS}
+Global positioning system { [Online] Available at:}.
+\newblock
+  \url{https://www.intechopen.com/books/New-Approach-of-Indoor-and-Outdoor-Localization-Systems
+  }, {\natexlab{a}}.
+
+\bibitem[GPS({\natexlab{b}})]{GPSworks}
+How gps works { [Online] Available at:}.
+\newblock \url{http://1-https//spymonde.com/gps-tracking/how-your-gps-works },
+  {\natexlab{b}}.
+
+\bibitem[Int()]{Introduction}
+{Indoor positioning system [Online] Available at:}.
+\newblock \url{https://www.cs.waikato.ac.nz/ml/weka/}.
+
+\bibitem[Loc()]{Loco}
+Loco guided video{ [Online] Available at:}.
+\newblock \url{https://www.youtube.com/watch?v=bjbSwUveuXs }.
+
+\bibitem[Akram et~al.(2018)Akram, Akbar, and Kim]{akram2018censloc}
+Beenish~Ayesha Akram, Ali~Hammad Akbar, and Ki-Hyung Kim.
+\newblock Censloc: Infrastructure-less indoor localization methodology using
+  gmm clustering-based classification ensembles.
+\newblock \emph{Mobile Information Systems}, 2018, 2018.
+
+\bibitem[Cooper et~al.(2016)Cooper, Biehl, Filby, and Kratz]{cooper2016loco}
+Matthew Cooper, Jacob Biehl, Gerry Filby, and Sven Kratz.
+\newblock Loco: boosting for indoor location classification combining wi-fi and
+  ble.
+\newblock \emph{Personal and Ubiquitous Computing}, 20\penalty0 (1):\penalty0
+  83--96, 2016.
+
+\bibitem[Hultgren and Papathanopoulos(2015)]{hultgren2015evaluating}
+Milton Hultgren and Dionysios Papathanopoulos.
+\newblock Evaluating the usage of bluetooth low energy beacons and smartphones
+  for indoor positioning systems.
+\newblock 2015.
+
+\end{thebibliography}
