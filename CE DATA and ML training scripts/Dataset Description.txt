@@ -1,0 +1,14 @@
+Dataset Description:
+
+
+Classification Problem (As total rooms/pinpoint locations are 23 so, total classes are 23)
+Total Features = 24 (Because we have 24 BLE Beacons)
+RSSI values range:
+from -50dBm (demonstrating high RSSI close to Access point) to 
+-95dBm (low RSSI ~ faroff Access point)
+Pre-processing: 
+Replace missing values with -100(it shows very weak signal).
+
+All other detail was mentioned in Analysis Report
+
+
