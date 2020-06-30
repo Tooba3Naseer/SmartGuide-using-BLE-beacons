@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+
+    <ImageButton
+        android:id="@+id/iBtnView"
+        android:layout_width="84dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="294dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/view" />
+
+    <TextView
+        android:id="@+id/txtRoom"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="34dp"
+        android:textColor="#00008b"
+        android:textSize="25dp" />
+
+    <ImageButton
+        android:id="@+id/iBtnDel"
+        android:layout_width="83dp"
+        android:layout_height="62dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="104dp"
+        app:srcCompat="@drawable/del"
+
+        android:layout_marginTop="16dp"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:scaleType="fitXY" />
+
+    <ImageButton
+        android:id="@+id/iBtnEdit"
+        android:layout_width="71dp"
+        android:layout_height="62dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="136dp"
+        android:background="#ffffff"
+        android:padding="10dp"
+        app:srcCompat="@drawable/edit"
+
+        android:scaleType="fitXY" />
+
+</RelativeLayout>
+

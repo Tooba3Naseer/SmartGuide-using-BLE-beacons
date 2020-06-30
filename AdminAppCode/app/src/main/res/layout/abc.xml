@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvHeading"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center"
+        android:text="Touch the icon below to upload file to server"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivAttachment"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/tv_file_name"
+        android:layout_width="202dp"
+        android:layout_height="53dp"
+        android:layout_below="@+id/ivAttachment"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/b_upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#039be5"
+        android:gravity="center"
+        android:text="Upload"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</RelativeLayout>
