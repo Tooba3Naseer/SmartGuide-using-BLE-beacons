@@ -1,0 +1,51 @@
+\begin{thebibliography}{1}
+
+\bibitem{GALILEO}
+Galileo european global navigation satellite system { [Online] Available at:}.
+\newblock
+  \url{https://www.gsa.europa.eu/european-gnss/galileo/galileo-european-global-satellite-based-navigation-system
+  }.
+
+\bibitem{GPS}
+Global positioning system { [Online] Available at:}.
+\newblock
+  \url{https://www.intechopen.com/books/New-Approach-of-Indoor-and-Outdoor-Localization-Systems
+  }.
+
+\bibitem{Loco}
+Loco guided video{ [Online] Available at:}.
+\newblock \url{https://www.youtube.com/watch?v=bjbSwUveuXs }.
+
+\bibitem{akram2018censloc}
+Beenish~Ayesha Akram, Ali~Hammad Akbar, and Ki-Hyung Kim.
+\newblock Censloc: Infrastructure-less indoor localization methodology using
+  gmm clustering-based classification ensembles.
+\newblock {\em Mobile Information Systems}, 2018, 2018.
+
+\bibitem{cooper2016loco}
+Matthew Cooper, Jacob Biehl, Gerry Filby, and Sven Kratz.
+\newblock Loco: boosting for indoor location classification combining wi-fi and
+  ble.
+\newblock {\em Personal and Ubiquitous Computing}, 20(1):83--96, 2016.
+
+\bibitem{hultgren2015evaluating}
+Milton Hultgren and Dionysios Papathanopoulos.
+\newblock Evaluating the usage of bluetooth low energy beacons and smartphones
+  for indoor positioning systems.
+\newblock 2015.
+
+\bibitem{wei2018end}
+Yujie Wei and Burcu Akinci.
+\newblock End-to-end image-based indoor localization for facility operation and
+  management.
+\newblock In {\em ISARC. Proceedings of the International Symposium on
+  Automation and Robotics in Construction}, volume~35, pages 1--9. IAARC
+  Publications, 2018.
+
+\bibitem{zhuang2016smartphone}
+Yuan Zhuang, Jun Yang, You Li, Longning Qi, and Naser El-Sheimy.
+\newblock Smartphone-based indoor localization with bluetooth low energy
+  beacons.
+\newblock {\em Sensors}, 16(5):596, 2016.
+
+\end{thebibliography}
