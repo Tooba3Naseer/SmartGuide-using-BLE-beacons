@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".NearbyRoomInformation">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:text="Nearby Rooms"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnRoomRight"
+        android:layout_width="80dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="60dp"
+
+        android:layout_marginBottom="20dp"
+        android:height="80dp"
+        android:background="@color/colorPrimary"
+        android:text="Room No 3"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/btnRoomDown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/btnRoomUp"
+        app:layout_constraintVertical_bias="0.432" />
+
+    <Button
+        android:id="@+id/btnRoomUp"
+        android:layout_width="74dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="173dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="20dp"
+
+        android:height="80dp"
+        android:background="@color/colorPrimary"
+        android:text="Room No 1"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="133dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="10dp"
+
+
+        android:layout_marginEnd="5dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/btnRoomDown"
+        app:layout_constraintEnd_toStartOf="@+id/btnRoomRight"
+        app:layout_constraintStart_toEndOf="@+id/btnRoomLeft"
+        app:layout_constraintTop_toBottomOf="@+id/btnRoomUp"
+
+        app:srcCompat="@drawable/direc" />
+
+    <Button
+        android:id="@+id/btnRoomDown"
+        android:layout_width="80dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="150dp"
+
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="140dp"
+        android:height="80dp"
+        android:background="@color/colorPrimary"
+        android:text="Room No 4"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btnRoomLeft"
+        android:layout_width="78dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="296dp"
+        android:layout_marginEnd="10dp"
+
+        android:layout_marginBottom="340dp"
+        android:height="80dp"
+        android:background="@color/colorPrimary"
+        android:text="Room No 2"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
